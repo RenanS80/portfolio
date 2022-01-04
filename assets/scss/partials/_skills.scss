@@ -1,0 +1,43 @@
+.skills-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 100%;
+
+    .skills-header {
+        text-align: center;
+        padding-top: 60px;
+        
+        h2 {
+            color: $white;
+        }
+
+        p {
+            color: $gray;
+            padding-top: 15px;
+        }
+    }
+
+    .skills-cards {
+        margin-top: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+        padding-bottom: 100px;
+    }
+
+    .card {
+        width: 180px;
+        height: 180px;
+        border-radius: 5px;
+        border: 1px solid $blue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: all .5s ease;
+
+        &:hover {
+            background: $purple-light;
+        }
+    }
+}

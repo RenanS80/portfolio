@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+@import 'partials/colors';
+@import 'partials/typography';
+@import 'partials/menu';
+@import 'partials/hero';
+@import 'partials/about';
+@import 'partials/skills';
+@import 'partials/portfolio';
+@import 'partials/contact';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: $purple;
+}
+
+

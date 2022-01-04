@@ -1,12 +1,318 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/assets/scss/style.css">
+    <script src="assets/js/svg-inject.min.js"></script>
+
     <title>Portfólio</title>
 </head>
+
 <body>
-    
+
+    <!-- NAVBAR -->
+    <header>
+        <nav>
+            <div class="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">Sobre mim</a></li>
+                    <li><a href="#skills">Conhecimentos</a></li>
+                    <li><a href="#portfolio">Portfólio</a></li>
+                    <li><a href="#contact">Contatos</a></li>
+                </ul>
+            </div>
+
+            <div class="nav-theme">
+                <div class="nav-theme-icon">
+                    <img src="assets/icons/sun.svg" alt="Theme light icon" onload="SVGInject(this)" />
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-info">
+                <h1>Me chamo <span class="auto-input">Renan Soares</span></h1>
+                <div class="hero-study">
+                    <img src="assets/icons/study.svg" class="study-icon" alt="Study icon" onload="SVGInject(this)" />
+                    <p>Sistemas de Informação | Desenvolvedor Front-end</p>
+                </div>
+
+                <div class="hero-location">
+                    <img src="assets/icons/location.svg" class="location-icon" alt="Location icon"
+                        onload="SVGInject(this)" />
+                    <p>Rio de Janeiro - Brasil</p>
+                </div>
+
+                <div class="hero-download-cv">
+                    <a href="assets/cv/CV - Renan Soares.pdf" download>
+                        Download CV
+                        <img src="assets/icons/download.svg" class="download-icon" alt="Download icon"
+                            onload="SVGInject(this)" />
+                    </a>
+                </div>
+            </div>
+
+            <img src="assets/images/profile.jpg" class="profile-image" alt="Renan">
+        </div>
+    </section>
+
+
+    <!-- SOBRE MIM -->
+    <section id="about" class="about">
+        <div class="about-container">
+            <div class="about-image">
+                <img src="assets/images/about.svg" class="vector" alt="Vector about" onload="SVGInject(this)" />
+            </div>
+
+            <div class="about-info">
+                <h2>Sobre mim</h2>
+                <p>Olá, meu nome é Renan Soares e sou graduando em Sistemas de Informações na Universidade Federal
+                    Fluminense (UFF).</p> <br>
+                <p>Sempre gostei da parte visual dos websites, o que me estimulou a dar uma atenção especial ao
+                    desenvolvimento front-end em meus estudos. Tive a oportunidade de cursar uma disciplina focada em UX
+                    Design na faculdade e despertou meu interesse por trazer a importância da usabilidade na visão do
+                    usuário e como ela impacta o front-end.</p> <br>
+                <p>Neste portfólio concentrei alguns dos projetos pessoais que desenvolvi, além de outros realizados
+                    durante cursos e bootcamps. Caso tenha interesse em ver todos, acesse meu GitHub.</p>
+                <div class="about-button">
+                    <a href="https://github.com/renans80" target="_blank">
+                        GitHub
+                        <img src="assets/icons/github.svg" class="github-icon" alt="Github icon"
+                            onload="SVGInject(this)" />
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CONHECIMENTOS -->
+    <section id="skills" class="skills">
+        <div class="skills-container">
+            <div class="skills-header">
+                <h2>Conhecimentos</h2>
+                <p>Passe o mouse sobre cada card para uma breve descrição</p>
+            </div>
+
+            <div class="skills-cards">
+                <div class="card">
+                    <img src="assets/icons/html5.svg" alt="HTML5 icon" onload="SVGInject(this)" />
+                </div>
+                <div class="card">
+                    <img src="assets/icons/css3.svg" alt="CSS3 icon" onload="SVGInject(this)" />
+                </div>
+                <div class="card">
+                    <img src="assets/icons/javascript.svg" alt="Javascript icon" onload="SVGInject(this)" />
+                </div>
+                <div class="card">
+                    <img src="assets/icons/sass.svg" alt="SASS icon" onload="SVGInject(this)" />
+                </div>
+                <div class="card">
+                    <img src="assets/icons/bootstrap.svg" alt="Bootstrap icon" onload="SVGInject(this)" />
+                </div>
+                <div class="card">
+                    <img src="assets/icons/react.svg" alt="React icon" onload="SVGInject(this)" />
+                </div>
+                <div class="card">
+                    <img src="assets/icons/figma.svg" alt="Figma icon" onload="SVGInject(this)" />
+                </div>
+                <div class="card">
+                    <img src="assets/icons/photoshop.svg" alt="Photoshop icon" onload="SVGInject(this)" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- PORTFÓLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="portfolio-container">
+            <div class="portfolio-header">
+                <h2>Portfólio</h2>
+                <p>Meus projetos mais recentes</p>
+            </div>
+
+            <div class="slide-container">
+                <div class="slide active">
+                    <div class="slide-image">
+                        <img src="assets/images/spider-man.jpg" alt="Spider-Man Miles Morales">
+                    </div>
+                    <div class="slide-info">
+                        <h3>Spider-Man: Miles Morales</h3>
+                        <p>Foi desenvolvido como projeto pessoal e baseado na minha prototipação realizada no Figma.
+                            Este projeto consiste nas telas de exibição, informação sobre a história e wallpapers do
+                            jogo Spider-Man: Miles Morales.</p>
+                        <div class="demo-button">
+                            <a href="#" target="_blank">
+                                Demo
+                                <img src="assets/icons/vector.svg" class="demo-icon" alt="Demo icon"
+                                    onload="SVGInject(this)" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="slide-image">
+                        <img src="assets/images/star-design.jpg" alt="Star Design">
+                    </div>
+                    <div class="slide-info">
+                        <h3>Star Design</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, non doloribus totam numquam incidunt illo? Numquam 
+                            veritatis fugit voluptatum quae officia sint repudiandae, obcaecati nemo.</p>
+                        <div class="demo-button">
+                            <a href="#" target="_blank">
+                                Demo
+                                <img src="assets/icons/vector.svg" class="demo-icon" alt="Demo icon"
+                                    onload="SVGInject(this)" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="slide-image">
+                        <img src="assets/images/ds-delivery.jpg" alt="DS Delivery">
+                    </div>
+                    <div class="slide-info">
+                        <h3>DS Delivery</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, non doloribus totam numquam incidunt illo? Numquam 
+                            veritatis fugit voluptatum quae officia sint repudiandae, obcaecati nemo.</p>
+                        <div class="demo-button">
+                            <a href="#" target="_blank">
+                                Demo
+                                <img src="assets/icons/vector.svg" class="demo-icon" alt="Demo icon"
+                                    onload="SVGInject(this)" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="slide-image">
+                        <img src="assets/images/netflix.jpg" alt="Netflix">
+                    </div>
+                    <div class="slide-info">
+                        <h3>Netflix</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, non doloribus totam numquam incidunt illo? Numquam 
+                            veritatis fugit voluptatum quae officia sint repudiandae, obcaecati nemo.</p>
+                        <div class="demo-button">
+                            <a href="#" target="_blank">
+                                Demo
+                                <img src="assets/icons/vector.svg" class="demo-icon" alt="Demo icon"
+                                    onload="SVGInject(this)" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="slide-image">
+                        <img src="assets/images/the-day-before.jpg" alt="The Day Before">
+                    </div>
+                    <div class="slide-info">
+                        <h3>The Day Before</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, non doloribus totam numquam incidunt illo? Numquam 
+                            veritatis fugit voluptatum quae officia sint repudiandae, obcaecati nemo.</p>
+                        <div class="demo-button">
+                            <a href="#" target="_blank">
+                                Demo
+                                <img src="assets/icons/vector.svg" class="demo-icon" alt="Demo icon"
+                                    onload="SVGInject(this)" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="slide-image">
+                        <img src="assets/images/ds-vendas.jpg" alt="DS Vendas">
+                    </div>
+                    <div class="slide-info">
+                        <h3>DS Vendas</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, non doloribus totam numquam incidunt illo? Numquam 
+                            veritatis fugit voluptatum quae officia sint repudiandae, obcaecati nemo.</p>
+                        <div class="demo-button">
+                            <a href="#" target="_blank">
+                                Demo
+                                <img src="assets/icons/vector.svg" class="demo-icon" alt="Demo icon"
+                                    onload="SVGInject(this)" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="prev-slide" onclick="prevSlide()">
+                    <img src="assets/icons/arrow-left.svg" alt="Previous project" onload="SVGInject(this)" />
+                </div>
+                <div class="next-slide" onclick="nextSlide()">
+                    <img src="assets/icons/arrow-right.svg" alt="Next project" onload="SVGInject(this)" />
+                </div>
+
+                <div class="bullets">
+                    <input type="radio" name="slider" class="radio-slide" id="slide1" onclick="radioSlide()" checked>
+                    <input type="radio" name="slider" class="radio-slide" id="slide2" onclick="radioSlide()">
+                    <input type="radio" name="slider" class="radio-slide" id="slide3" onclick="radioSlide()">
+                    <input type="radio" name="slider" class="radio-slide" id="slide4" onclick="radioSlide()">
+                    <input type="radio" name="slider" class="radio-slide" id="slide5" onclick="radioSlide()">
+                    <input type="radio" name="slider" class="radio-slide" id="slide6" onclick="radioSlide()">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CONTACTS -->
+    <footer id="contact" class="contact">
+        <div class="contact-container">
+            <div class="contact-header">
+                <h2>Contatos</h2>
+            </div>
+
+            <div class="contact-icons">
+                <a href="https://github.com/RenanS80" target="_blank">
+                    <img src="assets/icons/github.svg" class="github" alt="Github icon" onload="SVGInject(this)" />
+                </a>
+                <a href="https://www.linkedin.com/in/renansoaresf/" class="linkedin" target="_blank">
+                    <img src="assets/icons/linkedin.svg" alt="Linkedin icon" onload="SVGInject(this)" />
+                </a>
+                <div class="behance">
+                    <a href="https://www.behance.net/renansoares11" class="behance" target="_blank">
+                        <img src="assets/icons/behance.svg"  alt="Behance icon" onload="SVGInject(this)" />
+                    </a>
+                </div>
+ 
+                <a href="https://www.instagram.com/renan_soaresf/" class="instagram" target="_blank">
+                    <img src="assets/icons/instagram.svg" alt="Instagram icon" onload="SVGInject(this)" />
+                </a>
+                <a href="mailto:renansoaresf@gmail.com" class="email" target="_blank">
+                    <img src="assets/icons/email.svg" alt="Email icon" onload="SVGInject(this)" />
+                </a>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="assets/js/auto-input.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
+
 </html>

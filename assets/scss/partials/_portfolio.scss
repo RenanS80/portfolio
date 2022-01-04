@@ -1,0 +1,119 @@
+.portfolio {
+    background: $purple-light;
+}
+
+.portfolio-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 70px 0px 60px 0px;    
+
+    .portfolio-header {
+        text-align: center;
+
+        h2 {
+            color: $white;
+        }
+
+        p {
+            color: $gray;
+            margin-top: 15px;
+        }
+    }
+
+    .slide-container {
+        margin-top: 10px;
+        padding: 50px 0px 80px 0px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+        .slide {
+            display: none;
+            
+            &.active {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .slide-image {
+                width: 540px;
+                height: 304px;
+
+                img {
+                    width: 100%;
+                    border-radius: 5px;
+                }
+            }
+
+            .slide-info {
+                width: 435px;
+                margin-left: 100px;
+
+                h3 {
+                    color: $white;
+                }
+
+                p {
+                    color: $gray;
+                    margin-top: 15px;
+                    line-height: 22px;
+                }
+
+                .demo-button {
+                    margin-top: 50px;
+
+                    a {
+                        background: $blue;
+                        border-radius: 5px;
+                        padding: 15px 30px;
+                        color: $white;
+                        font-weight: bold;
+                        font-size: 18px;
+                        transition: all .5s ease;
+                        margin-top: 50px;
+        
+                        &:hover {
+                            opacity: 0.8;
+                        }
+                    
+                        .demo-icon {
+                            vertical-align: middle;
+                            margin-left: 5px;
+                        }
+                    }
+                }
+
+
+            }
+        }
+
+        .prev-slide,
+        .next-slide {
+            position: absolute;
+            top: calc(50% - 20px); 
+            cursor: pointer;
+        }
+
+        .prev-slide {
+            left: 0;
+        }
+
+        .next-slide {
+            right: 0;
+        }
+
+        .bullets {
+            position: absolute;
+            text-align: center;
+            bottom: 0;
+
+            input[type=radio] {
+                cursor: pointer;
+                margin: 0px 3px;
+            }
+        }
+    }
+}
