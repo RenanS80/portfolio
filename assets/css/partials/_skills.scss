@@ -1,5 +1,6 @@
 .skills-container {
-    max-width: 1440px;
+    max-width: 1140px;
+    padding: 0px 10px;
     margin: 0 auto;
     height: 100%;
 
@@ -11,7 +12,7 @@
             color: $white;
         }
 
-        p {
+        #skills-text {
             color: $gray;
             padding-top: 15px;
         }

@@ -1,19 +1,26 @@
 .hero {
-    height: 80vh;
+    height: 65vh;
 }
 
 .hero-container {
-    max-width: 1440px;
-    margin: 0 auto;
-    padding-top: 120px;
     height: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
 
     .hero-info {
         color: $white;
-        margin-left: 150px;
 
-        .auto-input {
+        p:first-child {
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 29px;
+        }
+
+        .name {
             color: $blue;
         }
 
@@ -35,7 +42,7 @@
         .hero-location {
             margin-top: 10px;
 
-            .location-icon {
+            .location {
                 padding-left: 4px;
             }
 
@@ -56,7 +63,7 @@
                 color: $white;
                 font-weight: bold;
                 font-size: 18px;
-                transition: all .5s ease;
+                transition: all 0.5s ease;
 
                 &:hover {
                     opacity: 0.7;
@@ -69,12 +76,8 @@
         }
     }
 
-    .profile-image {     
-        width: 280px;
-        height: 280px;
-        border-radius: 50%;
-        object-fit: cover;
-        border: 1px solid $white;
-        margin-left: 150px;
+    .vector {
+        width: 440px;
+        height: 367px;
     }
 }

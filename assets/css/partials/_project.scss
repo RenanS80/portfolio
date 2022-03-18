@@ -1,13 +1,13 @@
-.portfolio {
+.project {
     background: $purple-light;
 }
 
-.portfolio-container {
+.project-container {
     max-width: 1440px;
     margin: 0 auto;
     padding: 70px 0px 60px 0px;    
 
-    .portfolio-header {
+    .project-header {
         text-align: center;
 
         h2 {
@@ -59,7 +59,7 @@
                 p {
                     color: $gray;
                     margin-top: 15px;
-                    line-height: 22px;
+                    line-height: 27px;
                 }
 
                 .demo-button {
@@ -95,6 +95,11 @@
             position: absolute;
             top: calc(50% - 20px); 
             cursor: pointer;
+
+            i {
+                font-size: 40px;
+                color: $blue;
+            }
         }
 
         .prev-slide {
@@ -113,6 +118,7 @@
             input[type=radio] {
                 cursor: pointer;
                 margin: 0px 3px;
+                accent-color: $blue;
             }
         }
     }

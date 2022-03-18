@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="/assets/scss/style.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <script src="https://kit.fontawesome.com/cef61a1145.js" crossorigin="anonymous"></script>
     <script src="assets/js/svg-inject.min.js"></script>
 
     <title>Portfólio</title>
@@ -17,20 +18,17 @@
     <!-- NAVBAR -->
     <header>
         <nav>
+            <div class="brand">
+                <p>PORTFÓLIO</p>
+            </div>
+
             <div class="nav-menu">
                 <ul class="nav-list">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">Sobre mim</a></li>
                     <li><a href="#skills">Conhecimentos</a></li>
-                    <li><a href="#portfolio">Portfólio</a></li>
-                    <li><a href="#contact">Contatos</a></li>
+                    <li><a href="#project">Projetos</a></li>
                 </ul>
-            </div>
-
-            <div class="nav-theme">
-                <div class="nav-theme-icon">
-                    <img src="assets/icons/sun.svg" alt="Theme light icon" onload="SVGInject(this)" />
-                </div>
             </div>
         </nav>
     </header>
@@ -40,15 +38,16 @@
     <section id="home" class="hero">
         <div class="hero-container">
             <div class="hero-info">
-                <h1>Me chamo <span class="auto-input">Renan Soares</span></h1>
+                <p>Olá, eu sou</p>
+                <h1 class="name">Renan Soares</h1>
+
                 <div class="hero-study">
-                    <img src="assets/icons/study.svg" class="study-icon" alt="Study icon" onload="SVGInject(this)" />
+                    <i class="fa-solid fa-graduation-cap"></i>
                     <p>Sistemas de Informação | Desenvolvedor Front-end</p>
                 </div>
 
                 <div class="hero-location">
-                    <img src="assets/icons/location.svg" class="location-icon" alt="Location icon"
-                        onload="SVGInject(this)" />
+                    <i class="fa-solid fa-location-dot location"></i>
                     <p>Rio de Janeiro - Brasil</p>
                 </div>
 
@@ -61,7 +60,7 @@
                 </div>
             </div>
 
-            <img src="assets/images/profile.jpg" class="profile-image" alt="Renan">
+            <img src="assets/images/pc-study.svg" class="vector" alt="Vector about" onload="SVGInject(this)" />
         </div>
     </section>
 
@@ -70,27 +69,35 @@
     <section id="about" class="about">
         <div class="about-container">
             <div class="about-image">
-                <img src="assets/images/about.svg" class="vector" alt="Vector about" onload="SVGInject(this)" />
+                <img src="assets/images/profile.jpg" class="profile-image" alt="Renan">
             </div>
 
             <div class="about-info">
                 <h2>Sobre mim</h2>
-                <p>Olá, meu nome é Renan Soares e sou graduando em Sistemas de Informações na Universidade Federal
+                <p>Meu nome é Renan Soares e sou graduando em Sistemas de Informação na Universidade Federal
                     Fluminense (UFF).</p> <br>
                 <p>Sempre gostei da parte visual dos websites, o que me estimulou a dar uma atenção especial ao
-                    desenvolvimento front-end em meus estudos. Tive a oportunidade de cursar uma disciplina focada em UX
-                    Design na faculdade e despertou meu interesse por trazer a importância da usabilidade na visão do
-                    usuário e como ela impacta o front-end.</p> <br>
-                <p>Neste portfólio concentrei alguns dos projetos pessoais que desenvolvi, além de outros realizados
-                    durante cursos e bootcamps. Caso tenha interesse em ver todos, acesse meu GitHub.</p>
-                <div class="about-button">
-                    <a href="https://github.com/renans80" target="_blank">
-                        GitHub
-                        <img src="assets/icons/github.svg" class="github-icon" alt="Github icon"
-                            onload="SVGInject(this)" />
+                    desenvolvimento front-end em meus estudos. Além disso, tive a oportunidade de cursar uma disciplina
+                    focada em UX
+                    Design na faculdade e percebi o quão importante ela é para a área do front-end e para o usabilidade
+                    do usuário, o que imediatamente também
+                    despertou o meu interesse de estudo profissional.</p> <br>
+
+                <div class="contact-icons">
+                    <a href="https://github.com/RenanS80" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/renansoaresf/" target="_blank">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://www.behance.net/renansoares11" target="_blank">
+                        <i class="fa-brands fa-behance"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/renan_soaresf/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
                     </a>
                 </div>
-
             </div>
         </div>
     </section>
@@ -101,44 +108,41 @@
         <div class="skills-container">
             <div class="skills-header">
                 <h2>Conhecimentos</h2>
-                <p>Passe o mouse sobre cada card para uma breve descrição</p>
+                <p id="skills-text">Passe o mouse sobre cada card para uma breve descrição</p>
             </div>
 
             <div class="skills-cards">
-                <div class="card">
+                <div class="card html">
                     <img src="assets/icons/html5.svg" alt="HTML5 icon" onload="SVGInject(this)" />
                 </div>
-                <div class="card">
+                <div class="card css">
                     <img src="assets/icons/css3.svg" alt="CSS3 icon" onload="SVGInject(this)" />
                 </div>
-                <div class="card">
+                <div class="card javascript">
                     <img src="assets/icons/javascript.svg" alt="Javascript icon" onload="SVGInject(this)" />
                 </div>
-                <div class="card">
+                <div class="card sass">
                     <img src="assets/icons/sass.svg" alt="SASS icon" onload="SVGInject(this)" />
                 </div>
-                <div class="card">
+                <div class="card bootstrap">
                     <img src="assets/icons/bootstrap.svg" alt="Bootstrap icon" onload="SVGInject(this)" />
                 </div>
-                <div class="card">
+                <div class="card react">
                     <img src="assets/icons/react.svg" alt="React icon" onload="SVGInject(this)" />
                 </div>
-                <div class="card">
+                <div class="card figma">
                     <img src="assets/icons/figma.svg" alt="Figma icon" onload="SVGInject(this)" />
-                </div>
-                <div class="card">
-                    <img src="assets/icons/photoshop.svg" alt="Photoshop icon" onload="SVGInject(this)" />
                 </div>
             </div>
         </div>
     </section>
 
 
-    <!-- PORTFÓLIO -->
-    <section id="portfolio" class="portfolio">
-        <div class="portfolio-container">
-            <div class="portfolio-header">
-                <h2>Portfólio</h2>
+    <!-- PROJETOS -->
+    <section id="project" class="project">
+        <div class="project-container">
+            <div class="project-header">
+                <h2>Projetos</h2>
                 <p>Meus projetos mais recentes</p>
             </div>
 
@@ -155,7 +159,7 @@
                         <div class="demo-button">
                             <a href="#" target="_blank">
                                 Demo
-                                <img src="assets/icons/vector.svg" class="demo-icon" alt="Demo icon"
+                                <img src="assets/icons/demo.svg" class="demo-icon" alt="Demo icon"
                                     onload="SVGInject(this)" />
                             </a>
                         </div>
@@ -168,12 +172,13 @@
                     </div>
                     <div class="slide-info">
                         <h3>Star Design</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, non doloribus totam numquam incidunt illo? Numquam 
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, non doloribus totam
+                            numquam incidunt illo? Numquam
                             veritatis fugit voluptatum quae officia sint repudiandae, obcaecati nemo.</p>
                         <div class="demo-button">
                             <a href="#" target="_blank">
                                 Demo
-                                <img src="assets/icons/vector.svg" class="demo-icon" alt="Demo icon"
+                                <img src="assets/icons/demo.svg" class="demo-icon" alt="Demo icon"
                                     onload="SVGInject(this)" />
                             </a>
                         </div>
@@ -186,12 +191,13 @@
                     </div>
                     <div class="slide-info">
                         <h3>DS Delivery</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, non doloribus totam numquam incidunt illo? Numquam 
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, non doloribus totam
+                            numquam incidunt illo? Numquam
                             veritatis fugit voluptatum quae officia sint repudiandae, obcaecati nemo.</p>
                         <div class="demo-button">
                             <a href="#" target="_blank">
                                 Demo
-                                <img src="assets/icons/vector.svg" class="demo-icon" alt="Demo icon"
+                                <img src="assets/icons/demo.svg" class="demo-icon" alt="Demo icon"
                                     onload="SVGInject(this)" />
                             </a>
                         </div>
@@ -204,12 +210,13 @@
                     </div>
                     <div class="slide-info">
                         <h3>Netflix</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, non doloribus totam numquam incidunt illo? Numquam 
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, non doloribus totam
+                            numquam incidunt illo? Numquam
                             veritatis fugit voluptatum quae officia sint repudiandae, obcaecati nemo.</p>
                         <div class="demo-button">
                             <a href="#" target="_blank">
                                 Demo
-                                <img src="assets/icons/vector.svg" class="demo-icon" alt="Demo icon"
+                                <img src="assets/icons/demo.svg" class="demo-icon" alt="Demo icon"
                                     onload="SVGInject(this)" />
                             </a>
                         </div>
@@ -222,12 +229,13 @@
                     </div>
                     <div class="slide-info">
                         <h3>The Day Before</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, non doloribus totam numquam incidunt illo? Numquam 
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, non doloribus totam
+                            numquam incidunt illo? Numquam
                             veritatis fugit voluptatum quae officia sint repudiandae, obcaecati nemo.</p>
                         <div class="demo-button">
                             <a href="#" target="_blank">
                                 Demo
-                                <img src="assets/icons/vector.svg" class="demo-icon" alt="Demo icon"
+                                <img src="assets/icons/demo.svg" class="demo-icon" alt="Demo icon"
                                     onload="SVGInject(this)" />
                             </a>
                         </div>
@@ -240,23 +248,24 @@
                     </div>
                     <div class="slide-info">
                         <h3>DS Vendas</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, non doloribus totam numquam incidunt illo? Numquam 
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, non doloribus totam
+                            numquam incidunt illo? Numquam
                             veritatis fugit voluptatum quae officia sint repudiandae, obcaecati nemo.</p>
                         <div class="demo-button">
                             <a href="#" target="_blank">
                                 Demo
-                                <img src="assets/icons/vector.svg" class="demo-icon" alt="Demo icon"
+                                <img src="assets/icons/demo.svg" class="demo-icon" alt="Demo icon"
                                     onload="SVGInject(this)" />
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <div class="prev-slide" onclick="prevSlide()">
-                    <img src="assets/icons/arrow-left.svg" alt="Previous project" onload="SVGInject(this)" />
+                <div id="prev-slide" class="prev-slide">
+                    <i class="fa-solid fa-arrow-left"></i>
                 </div>
-                <div class="next-slide" onclick="nextSlide()">
-                    <img src="assets/icons/arrow-right.svg" alt="Next project" onload="SVGInject(this)" />
+                <div id="next-slide" class="next-slide">
+                    <i class="fa-solid fa-arrow-right"></i>
                 </div>
 
                 <div class="bullets">
@@ -274,45 +283,17 @@
 
 
     <!-- CONTACTS -->
-    <footer id="contact" class="contact">
-        <div class="contact-container">
-            <div class="contact-header">
-                <h2>Contatos</h2>
-            </div>
-
-            <div class="contact-icons">
-                <a href="https://github.com/RenanS80" target="_blank">
-                    <img src="assets/icons/github.svg" class="github" alt="Github icon" onload="SVGInject(this)" />
-                </a>
-                <a href="https://www.linkedin.com/in/renansoaresf/" class="linkedin" target="_blank">
-                    <img src="assets/icons/linkedin.svg" alt="Linkedin icon" onload="SVGInject(this)" />
-                </a>
-                <div class="behance">
-                    <a href="https://www.behance.net/renansoares11" class="behance" target="_blank">
-                        <img src="assets/icons/behance.svg"  alt="Behance icon" onload="SVGInject(this)" />
-                    </a>
-                </div>
- 
-                <a href="https://www.instagram.com/renan_soaresf/" class="instagram" target="_blank">
-                    <img src="assets/icons/instagram.svg" alt="Instagram icon" onload="SVGInject(this)" />
-                </a>
-                <a href="mailto:renansoaresf@gmail.com" class="email" target="_blank">
-                    <img src="assets/icons/email.svg" alt="Email icon" onload="SVGInject(this)" />
-                </a>
+    <footer id="footer" class="footer">
+        <div class="footer-container">
+            <div class="footer-header">
+                <p>@ 2022 - Renan Soares</p>
             </div>
         </div>
     </footer>
 
 
 
-
-
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="assets/js/auto-input.js"></script>
-    <script src="assets/js/script.js"></script>
+    <script type="module" src="assets/js/script.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,53 @@
+.about {
+    background: $purple-light;
+}
+
+.about-container {
+    max-width: 1140px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 70px 10px 0px 10px;
+
+    .profile-image {     
+        width: 380px;
+        height: 380px;
+        object-fit: cover;
+        border-radius: 4px;
+        border-left: 4px solid $blue;
+        
+    }
+
+    .about-info {
+        color: $white;
+        width: 600px;
+        padding-bottom: 60px;
+
+        h2 {
+            padding-bottom: 26px;
+        }
+
+        p {
+            color: $gray;
+            line-height: 27px;
+        }
+
+        .contact-icons {
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            gap: 25px;
+
+            i {
+                color: $blue;
+                font-size: 25px;
+                transition: all .4s ease;
+
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+}
