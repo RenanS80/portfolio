@@ -20,4 +20,19 @@ body {
     background: $purple;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
+html::-webkit-scrollbar {
+    width: 11px;
+}
+
+html::-webkit-scrollbar-track {
+    background: $gray-dark;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: $gray-light;
+    border-radius: 6px;
+}

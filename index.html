@@ -6,11 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="/assets/css/style.css">
     <script src="https://kit.fontawesome.com/cef61a1145.js" crossorigin="anonymous"></script>
     <script src="assets/js/svg-inject.min.js"></script>
 
-    <title>Portfólio</title>
+    <title>Portfólio | Renan Soares</title>
 </head>
 
 <body>
@@ -24,7 +25,7 @@
 
             <div class="nav-menu">
                 <ul class="nav-list">
-                    <li><a href="#home">Home</a></li>
+                    <li><a href="#hero">Home</a></li>
                     <li><a href="#about">Sobre mim</a></li>
                     <li><a href="#skills">Conhecimentos</a></li>
                     <li><a href="#project">Projetos</a></li>
@@ -35,11 +36,15 @@
 
 
     <!-- HERO -->
-    <section id="home" class="hero">
+    <section id="hero" class="hero">
         <div class="hero-container">
             <div class="hero-info">
-                <p>Olá, eu sou</p>
-                <h1 class="name">Renan Soares</h1>
+                <div id="hero-name">
+                    <p>Olá, eu sou</p>
+                    <h1 class="name">Renan Soares</h1>
+                </div>
+
+                <span id="typed"></span>
 
                 <div class="hero-study">
                     <i class="fa-solid fa-graduation-cap"></i>
@@ -60,7 +65,10 @@
                 </div>
             </div>
 
-            <img src="assets/images/pc-study.svg" class="vector" alt="Vector about" onload="SVGInject(this)" />
+            <div class="vector">
+                <img src="assets/images/pc-study.svg" alt="Vector about" />
+            </div>
+
         </div>
     </section>
 
@@ -143,11 +151,47 @@
         <div class="project-container">
             <div class="project-header">
                 <h2>Projetos</h2>
-                <p>Meus projetos mais recentes</p>
+                <p>Alguns dos meus projetos mais recentes</p>
             </div>
 
             <div class="slide-container">
                 <div class="slide active">
+                    <div class="slide-image">
+                        <img src="assets/images/ds-movie.jpg" alt="DS Movie">
+                    </div>
+                    <div class="slide-info">
+                        <h3>DS Movie</h3>
+                        <p>Aplicação que exibe um catálogo de filmes e permite que o usuário avalie cada filme, informando seu e-mail e a nota desejada.
+                            A classificação do filme é calculada e exibida em tempo real.
+                        </p>
+                        <div class="demo-button">
+                            <a href="https://renan-dsmovie.netlify.app/" target="_blank">
+                                Demo
+                                <img src="assets/icons/demo.svg" class="demo-icon" alt="Demo icon"
+                                    onload="SVGInject(this)" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="slide-image">
+                        <img src="assets/images/desafios-codelandia.jpg" alt="Desafios Codelândia">
+                    </div>
+                    <div class="slide-info">
+                        <h3>Desafios Codelândia</h3>
+                        <p>Website que contém todos os desafios propostos na Comunidade Codelândia do Discord.</p>
+                        <div class="demo-button">
+                            <a href="https://renans80.github.io/desafios-codelandia/" target="_blank">
+                                Demo
+                                <img src="assets/icons/demo.svg" class="demo-icon" alt="Demo icon"
+                                    onload="SVGInject(this)" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide">
                     <div class="slide-image">
                         <img src="assets/images/spider-man.jpg" alt="Spider-Man Miles Morales">
                     </div>
@@ -157,7 +201,7 @@
                             Este projeto consiste nas telas de exibição, informação sobre a história e wallpapers do
                             jogo Spider-Man: Miles Morales.</p>
                         <div class="demo-button">
-                            <a href="#" target="_blank">
+                            <a href="https://github.com/RenanS80/spiderman" target="_blank">
                                 Demo
                                 <img src="assets/icons/demo.svg" class="demo-icon" alt="Demo icon"
                                     onload="SVGInject(this)" />
@@ -172,11 +216,9 @@
                     </div>
                     <div class="slide-info">
                         <h3>Star Design</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, non doloribus totam
-                            numquam incidunt illo? Numquam
-                            veritatis fugit voluptatum quae officia sint repudiandae, obcaecati nemo.</p>
+                        <p>Star Design é uma agência de design e desenvolvimento com foco em layouts responsivos.</p>
                         <div class="demo-button">
-                            <a href="#" target="_blank">
+                            <a href="https://renans80.github.io/star-design/" target="_blank">
                                 Demo
                                 <img src="assets/icons/demo.svg" class="demo-icon" alt="Demo icon"
                                     onload="SVGInject(this)" />
@@ -191,11 +233,10 @@
                     </div>
                     <div class="slide-info">
                         <h3>DS Delivery</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, non doloribus totam
-                            numquam incidunt illo? Numquam
-                            veritatis fugit voluptatum quae officia sint repudiandae, obcaecati nemo.</p>
+                        <p>Aplicação full-stack que simula mini-sistema delivery. O usuário seleciona os pratos desejados do cardápio, 
+                            informa o endereço para entrega e realiza o pedido.</p>
                         <div class="demo-button">
-                            <a href="#" target="_blank">
+                            <a href="https://renan-dsdeliver.netlify.app/" target="_blank">
                                 Demo
                                 <img src="assets/icons/demo.svg" class="demo-icon" alt="Demo icon"
                                     onload="SVGInject(this)" />
@@ -210,11 +251,10 @@
                     </div>
                     <div class="slide-info">
                         <h3>Netflix</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, non doloribus totam
-                            numquam incidunt illo? Numquam
-                            veritatis fugit voluptatum quae officia sint repudiandae, obcaecati nemo.</p>
+                        <p>Clone da plataforma de streaming Netflix que consome dados da API themoviedb.org.</p><br>
+                        <small>*Todos os direitos reservados à Netflix.</small>
                         <div class="demo-button">
-                            <a href="#" target="_blank">
+                            <a href="https://renans80.github.io/netflix-clone/" target="_blank">
                                 Demo
                                 <img src="assets/icons/demo.svg" class="demo-icon" alt="Demo icon"
                                     onload="SVGInject(this)" />
@@ -229,9 +269,8 @@
                     </div>
                     <div class="slide-info">
                         <h3>The Day Before</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, non doloribus totam
-                            numquam incidunt illo? Numquam
-                            veritatis fugit voluptatum quae officia sint repudiandae, obcaecati nemo.</p>
+                        <p>Clone do site oficial do game The Day Before.</p><br>
+                        <small>*Todos os direitos reservados à desenvolvedora Fntastic.</small>
                         <div class="demo-button">
                             <a href="#" target="_blank">
                                 Demo
@@ -242,39 +281,13 @@
                     </div>
                 </div>
 
-                <div class="slide">
-                    <div class="slide-image">
-                        <img src="assets/images/ds-vendas.jpg" alt="DS Vendas">
+                <div class="controls">
+                    <div id="prev-slide" class="prev-slide">
+                        <i class="fa-solid fa-arrow-left"></i>
                     </div>
-                    <div class="slide-info">
-                        <h3>DS Vendas</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, non doloribus totam
-                            numquam incidunt illo? Numquam
-                            veritatis fugit voluptatum quae officia sint repudiandae, obcaecati nemo.</p>
-                        <div class="demo-button">
-                            <a href="#" target="_blank">
-                                Demo
-                                <img src="assets/icons/demo.svg" class="demo-icon" alt="Demo icon"
-                                    onload="SVGInject(this)" />
-                            </a>
-                        </div>
+                    <div id="next-slide" class="next-slide">
+                        <i class="fa-solid fa-arrow-right"></i>
                     </div>
-                </div>
-
-                <div id="prev-slide" class="prev-slide">
-                    <i class="fa-solid fa-arrow-left"></i>
-                </div>
-                <div id="next-slide" class="next-slide">
-                    <i class="fa-solid fa-arrow-right"></i>
-                </div>
-
-                <div class="bullets">
-                    <input type="radio" name="slider" class="radio-slide" id="slide1" onclick="radioSlide()" checked>
-                    <input type="radio" name="slider" class="radio-slide" id="slide2" onclick="radioSlide()">
-                    <input type="radio" name="slider" class="radio-slide" id="slide3" onclick="radioSlide()">
-                    <input type="radio" name="slider" class="radio-slide" id="slide4" onclick="radioSlide()">
-                    <input type="radio" name="slider" class="radio-slide" id="slide5" onclick="radioSlide()">
-                    <input type="radio" name="slider" class="radio-slide" id="slide6" onclick="radioSlide()">
                 </div>
 
             </div>
@@ -282,17 +295,21 @@
     </section>
 
 
-    <!-- CONTACTS -->
+    <!-- FOOTER -->
     <footer id="footer" class="footer">
         <div class="footer-container">
             <div class="footer-header">
                 <p>@ 2022 - Renan Soares</p>
             </div>
+            <a href="mailto:renansoaresffc@gmail.com" class="footer-email">
+                <i class="fa-solid fa-envelope"></i>
+                <p>renansoaresffc@gmail.com</p>
+            </a>
         </div>
     </footer>
 
 
-
+    <!-- SCRIPTS -->
     <script type="module" src="assets/js/script.js"></script>
 </body>
 
