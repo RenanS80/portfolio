@@ -1,4 +1,4 @@
-export function changeSlide() {
+export function changeProjectSlide() {
 
     let slides = document.querySelectorAll('.project .slide-container .slide')
     let index = 0;

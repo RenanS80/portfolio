@@ -4,20 +4,41 @@ h1, h2, h3 {
 
 h1 {
     font-size: 55px;
+
+    @media (max-width: 576px) {
+        font-size: 44px;
+    }
 }
 
 h2 {
     font-size: 40px;
+
+    @media(max-width: 576px) {
+        font-size: 32px;
+    }
 }
 
 h3 {
     font-size: 30px;
+
+    @media(max-width: 576px) {
+        font-size: 24px;
+    }
 }
 
 p{
     font-size: 17px;
+
+    @media(max-width: 576px) {
+        font-size: 15.5px;
+    }
 }
 
 a {
     text-decoration: none;
+    font-size: 17px;
+
+    @media(max-width: 576px) {
+        font-size: 15.5px;
+    }
 }

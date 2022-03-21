@@ -8,6 +8,8 @@
 
     <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="/assets/css/style.css">
+    
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://kit.fontawesome.com/cef61a1145.js" crossorigin="anonymous"></script>
     <script src="assets/js/svg-inject.min.js"></script>
 
@@ -23,12 +25,19 @@
                 <p>PORTFÓLIO</p>
             </div>
 
-            <div class="nav-menu">
+            <!-- MENU TOGGLE MOBILE -->
+            <div class="menu-toggle">
+                <div class="one"></div>       
+                <div class="two"></div>       
+                <div class="three"></div>     
+            </div>
+
+            <div class="nav-items">
                 <ul class="nav-list">
-                    <li><a href="#hero">Home</a></li>
-                    <li><a href="#about">Sobre mim</a></li>
-                    <li><a href="#skills">Conhecimentos</a></li>
-                    <li><a href="#project">Projetos</a></li>
+                    <li><a href="#hero" class="hero-nav">Home</a></li>
+                    <li><a href="#about" class="about-nav">Sobre mim</a></li>
+                    <li><a href="#skills" class="skills-nav">Conhecimentos</a></li>
+                    <li><a href="#project" class="project-nav">Projetos</a></li>
                 </ul>
             </div>
         </nav>
@@ -43,8 +52,6 @@
                     <p>Olá, eu sou</p>
                     <h1 class="name">Renan Soares</h1>
                 </div>
-
-                <span id="typed"></span>
 
                 <div class="hero-study">
                     <i class="fa-solid fa-graduation-cap"></i>
@@ -77,7 +84,7 @@
     <section id="about" class="about">
         <div class="about-container">
             <div class="about-image">
-                <img src="assets/images/profile.jpg" class="profile-image" alt="Renan">
+                <img src="assets/images/profile.jpg" alt="Renan">
             </div>
 
             <div class="about-info">
@@ -140,6 +147,9 @@
                 </div>
                 <div class="card figma">
                     <img src="assets/icons/figma.svg" alt="Figma icon" onload="SVGInject(this)" />
+                </div>
+                <div class="card java">
+                    <img src="assets/icons/java.svg" alt="Java icon" onload="SVGInject(this)" />
                 </div>
             </div>
         </div>
@@ -279,7 +289,7 @@
                             </a>
                         </div>
                     </div>
-                </div>
+                </div> 
 
                 <div class="controls">
                     <div id="prev-slide" class="prev-slide">

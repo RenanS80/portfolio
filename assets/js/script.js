@@ -1,42 +1,52 @@
-import { changeSlide } from "./changeSlide.js"; 
-import { hoverChangeCardDescription } from "./hoverChangeCardDescription.js"; 
+import { changeProjectSlide } from "./changeProjectSlide.js";
+import { scrollReveal } from "./scrollReveal.js";
+import { menuToggle } from "./menu.js";
+import { ChangeSkillsCardDescription } from "./ChangeSkillsCardDescription.js";
 
-changeSlide();
+changeProjectSlide();
+scrollReveal();
+menuToggle();
+
 
 // Change Skills Description
-hoverChangeCardDescription(
+ChangeSkillsCardDescription(
     ".card.html",
-    "HTML é uma linguagem de marcação de hipertexto para apresentar e estruturar o conteúdo na web. Sua estrutura é baseada em tags"
+    "<strong>HTML</strong> é uma linguagem de marcação de hipertexto para apresentar e estruturar o conteúdo na web. Sua estrutura é baseada em tags"
 );
 
-hoverChangeCardDescription(
+ChangeSkillsCardDescription(
     ".card.css",
-    "CSS é uma linguagem de estilo usada para estilizar os documentos HTML. Sua estrutura é baseada em id, classe e tag"
+    "<strong>CSS</strong> é uma linguagem de estilo usada para estilizar os documentos HTML. Sua estrutura é baseada em id, classe e tag"
 );
 
-hoverChangeCardDescription(
+ChangeSkillsCardDescription(
     ".card.javascript",
-    "JavaScript é uma linguagem de programação que permite a implementação de itens complexos e dinâmicos em páginas web"
+    "<strong>JavaScript</strong> é uma linguagem de programação que permite a implementação de itens complexos e dinâmicos em páginas web"
 );
 
-hoverChangeCardDescription(
+ChangeSkillsCardDescription(
     ".card.sass",
-    "SASS é uma linguagem de extensão do CSS (pré-processador). Seu objetivo é tornar o processo de desenvolvimento mais simples e eficiente"
+    "<strong>SASS</strong> é uma linguagem de extensão do CSS (pré-processador). Seu objetivo é tornar o processo de desenvolvimento mais simples e eficiente"
 );
 
-hoverChangeCardDescription(
+ChangeSkillsCardDescription(
     ".card.bootstrap",
-    "Bootstrap é um framework front-end que fornece estruturas de CSS para a criação de sites e aplicações responsivas de forma rápida e simples"
+    "<strong>Bootstrap</strong> é um framework front-end que fornece estruturas de CSS para a criação de sites e aplicações responsivas de forma rápida e simples"
 );
 
-hoverChangeCardDescription(
+ChangeSkillsCardDescription(
     ".card.react",
-    "React é uma biblioteca JavaScript de código aberto com foco em criar interfaces de usuário em páginas web"
+    "<strong>React</strong> é uma biblioteca JavaScript de código aberto com foco em criar interfaces de usuário em páginas web"
 );
 
-hoverChangeCardDescription(
+ChangeSkillsCardDescription(
     ".card.figma",
-    "O Figma é uma ferramenta colaborativa para design vetorial de interfaces e protótipos"
+    "<strong>Figma</strong> é uma ferramenta colaborativa para design vetorial de interfaces e protótipos"
+);
+
+ChangeSkillsCardDescription(
+    ".card.java",
+    "<strong>Java</strong> é uma linguagem de programação orientada a objetos e é bastante utilizada no mercado para o desenvolvimento de aplicações web e mobile"
 );
 
 

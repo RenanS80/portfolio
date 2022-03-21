@@ -15,6 +15,7 @@ nav {
     justify-content: space-between;
     margin: 0 auto;
     padding: 0px 10px;
+    
 
     .brand {
         font-weight: 500;
@@ -23,8 +24,36 @@ nav {
         color: $blue;
     }
 
-    .nav-menu {
-        
+    .menu-toggle {
+        display: none;
+
+        @media(max-width: 620px) {
+            display: block;
+            width: 40px;            // define o tamanho do container que engloba o menu hambúrguer   
+            height: 30px;
+            margin-right: 20px;
+            
+            .one,
+            .two,
+            .three {
+                background-color: $gray-light;     // cria os três traços do menu hambúrguer
+                height: 4px;
+                width: 100%;
+                margin: 6px auto;
+                transition-duration: 0.3s;
+            }
+
+            .one {
+                margin-top: 0px;
+            }
+        }
+    }
+
+    .nav-items {
+        @media (max-width: 620px) {
+            display: none;
+        }
+
         ul {
             height: 100%;
             display: flex;
@@ -43,6 +72,70 @@ nav {
                         color: $white-dark;
                     }
                 }
+            }
+        }
+    }
+    
+}
+
+nav.on {
+    @media (max-width: 620px) {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;   
+        height: 100vh;
+        background-color: $purple-light;
+        z-index: 10;                    // para ficar posicionado sobre os demais elementos da página
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-items {
+        @media (max-width: 620px) {
+            display: block;
+        }
+
+        ul {
+            @media (max-width: 620px) {
+                text-align: center;                  
+                display: block;
+            }
+
+            a {
+                @media (max-width: 620px) {
+                    transition-duration: 0.5s;
+                    font-size: 25px;
+                    line-height: 70px;        // aumenta a distância de um item para o outro
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .menu-toggle {
+        @media (max-width: 620px) {
+            position: absolute;
+            right: 12px;
+            top: 25px;
+        }
+
+        .one {
+            @media (max-width: 620px) {
+                transform: rotate(45deg) translate(6px, 6px);
+            }
+        }
+
+        .two {
+            @media (max-width: 620px) {
+                opacity: 0;
+            }
+        }
+
+        .three {
+            @media (max-width: 620px) {
+                transform: rotate(-45deg) translate(8px, -9px);
             }
         }
     }
