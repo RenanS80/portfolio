@@ -1,4 +1,4 @@
-export function ChangeSkillsCardDescription(cardName, text) {
+export function changeSkillsCardDescription(cardName, text) {
 
     let skillsText = document.getElementById('skills-text');
 

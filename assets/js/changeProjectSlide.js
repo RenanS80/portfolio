@@ -1,6 +1,6 @@
 export function changeProjectSlide() {
 
-    let slides = document.querySelectorAll('.project .slide-container .slide')
+    let slides = document.querySelectorAll('#project .slide-container .slide')
     let index = 0;
     const prevSlide = document.getElementById('prev-slide');
     const nextSlide = document.getElementById('next-slide');
