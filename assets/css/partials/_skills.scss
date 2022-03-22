@@ -3,9 +3,7 @@
 }
 
 .skills-container {
-    max-width: 1140px;
-    padding: 0px 10px;
-    margin: 0 auto;
+    @include container;
 
     .skills-header {
         text-align: center;
@@ -22,29 +20,25 @@
     }
 
     .skills-cards {
-        margin-top: 50px;
-        display: flex;
+        @include flexboxStartStart;
+
         flex-wrap: wrap;
         gap: 50px;
+        margin-top: 50px;
         padding-bottom: 20px;
 
-        @media (min-width: 666px) and (max-width: 1119px) {
-            justify-content: center;
-        }
-
-        @media (max-width: 665px) {
+        @media (max-width: 1119px) {
             justify-content: center;
         }
     }
 
     .card {
-        width: 180px;
-        height: 180px;
+        @include flexboxCenterCenter;
+
+        width: 165px;
+        height: 165px;
         border-radius: 5px;
         border: 1px solid $blue;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         cursor: pointer;
         transition: all .5s ease;
 

@@ -3,13 +3,10 @@
 }
 
 .hero-container {
+    @include container;
+    @include flexboxSpaceBetweenCenter;
+
     height: 100%;
-    max-width: 1140px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 10px;
 
     @media (max-width: 1200px) {
         justify-content: space-around;
@@ -42,8 +39,7 @@
 
         .hero-study,
         .hero-location {
-            display: flex;
-            align-items: center;
+            @include flexboxStartCenter;
         }
 
         .hero-study {

@@ -4,12 +4,11 @@
 }
 
 .about-container {
-    max-width: 1140px;
-    margin: 0 auto;
+    @include container;
+    @include flexboxSpaceBetweenStart;
+
     height: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 70px 10px 0px 10px;
+    padding-top: 70px;
 
     @media(max-width: 1010px) {
         flex-direction: column;
@@ -59,13 +58,22 @@
             align-items: center;
             gap: 25px;
 
-            i {
-                color: $blue;
-                font-size: 25px;
+            a {
+                @include flexboxCenterCenter;
+
+                width: 43px;
+                height: 43px;
+                border-radius: 8px;
+                background-color: $purple;
                 transition: all .4s ease;
 
                 &:hover {
                     opacity: 0.8;
+                }
+
+                i {
+                    color: $blue;
+                    font-size: 25px;
                 }
             }
         }

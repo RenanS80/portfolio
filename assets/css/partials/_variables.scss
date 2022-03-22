@@ -1,0 +1,64 @@
+$purple: #0E091B;
+$purple-light: #151022;
+
+$blue: #5398BE;
+
+$gray: #C9C9C9;
+$gray-light: #D7D7D7;
+$gray-dark: #A5A5A5;
+
+$white: #F4F2F7;
+$white-dark: #EAEAEA;
+
+$border: #161028;
+
+
+@mixin container(){
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0px 10px;
+}
+
+
+// Flexbox
+@mixin flexboxStartStart(){
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+@mixin flexboxStartCenter(){
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+@mixin flexboxCenterStart(){
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+@mixin flexboxCenterCenter(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flexboxSpaceBetweenStart(){
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+@mixin flexboxSpaceBetweenCenter(){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin flexboxEndCenter(){
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}

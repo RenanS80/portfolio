@@ -7,7 +7,6 @@ changeProjectSlide();
 scrollReveal();
 menuToggle();
 
-
 // Change Skills Description
 changeSkillsCardDescription(
     ".card.html",

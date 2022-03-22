@@ -1,27 +1,23 @@
 header {
     width: 100%;
     z-index: 999;
-    width: 100%;
     position: fixed;
     background: $purple;
-    border-bottom: 1px solid $border-light;
+    border-bottom: 2px solid $border;
 }
 
 nav {
-    height: 75px;
-    max-width: 1140px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0 auto;
-    padding: 0px 10px;
-    
+    @include container;
+    @include flexboxSpaceBetweenCenter;
+
+    height: 75px;  
 
     .brand {
         font-weight: 500;
         font-size: 24px;
         line-height: 29px;
         color: $blue;
+        text-transform: uppercase;
     }
 
     .menu-toggle {
@@ -29,16 +25,17 @@ nav {
 
         @media(max-width: 620px) {
             display: block;
-            width: 40px;            // define o tamanho do container que engloba o menu hambúrguer   
+            width: 35px;            // Definir o tamanho do container que engloba o menu toggle   
             height: 30px;
             margin-right: 20px;
             
             .one,
             .two,
             .three {
-                background-color: $gray-light;     // cria os três traços do menu hambúrguer
+                background-color: $gray-light;     // Criar os três traços do menu hambúrguer
                 height: 4px;
                 width: 100%;
+                border-radius: 6px;
                 margin: 6px auto;
                 transition-duration: 0.3s;
             }
@@ -55,10 +52,9 @@ nav {
         }
 
         ul {
+            @include flexboxEndCenter;
+
             height: 100%;
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
             gap: 40px;
 
             li {
@@ -80,16 +76,15 @@ nav {
 
 nav.on {
     @media (max-width: 620px) {
+        @include flexboxCenterCenter;
+        
         position: absolute;
         top: 0;
         left: 0;
         width: 100vw;   
         height: 100vh;
         background-color: $purple-light;
-        z-index: 10;                    // para ficar posicionado sobre os demais elementos da página
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        z-index: 10;                        // Ficar posicionado sobre os demais elementos da página
     }
 
     .nav-items {
