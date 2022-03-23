@@ -2,7 +2,7 @@ header {
     width: 100%;
     z-index: 999;
     position: fixed;
-    background: $purple;
+    background: $black;
     border-bottom: 2px solid $border;
 }
 
@@ -83,7 +83,7 @@ nav.on {
         left: 0;
         width: 100vw;   
         height: 100vh;
-        background-color: $purple-light;
+        background-color: $black-light;
         z-index: 10;                        // Ficar posicionado sobre os demais elementos da página
     }
 

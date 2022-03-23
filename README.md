@@ -15,6 +15,7 @@ Foram utilizadas as seguintes tecnologias:
 * Javascript
 * SASS
 * ScrollReveal
+* Tippy.js
 
 
 
