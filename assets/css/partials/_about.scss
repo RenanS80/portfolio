@@ -50,6 +50,10 @@
             color: $gray;
             padding-top: 15px;
             line-height: 27px;
+            
+            @media (max-width: 590px) {
+                text-align: justify;
+            }
         }
 
         .contact-icons {
