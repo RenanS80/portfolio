@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+:root {
+  --blue: #1D1D31;
+  --lilac: #57679F;
+  --black: #313131;
+  --white: #F4F2F7;
+  --white-200: #F3F4F6;
+  --gray: #EAEAEA;
+  --gray-200: #6D6F70;
+  --gray-border: #BDBDBD;
+
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--white);
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  max-width: 1220px;
+  padding: 0 15px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.btn {
+  text-decoration: none;
+  transition: .4s ease;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 55px;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 47px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Section Hero */
+.hero {
+  height: calc(100vh - 120px);
+  background-color: var(--blue);
+  position: relative;
+}
+
+.hero .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero__title {
+  padding: 0 10px;
+  text-align: center;
+  margin-top: 180px;
+}
+
+.hero__title h2 {
+  color: var(--white-200);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.hero__title h1 {
+  color: var(--lilac);
+}
+
+.hero__title p {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 18px;
+  color: var(--white);
+  margin-top: 35px;
+  position: relative;
+}
+
+.hero__title p::before,
+.hero__title p::after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 1px;
+  background-color: var(--white);
+}
+
+.hero__title p::before {
+  margin-left: -10px;
+}
+
+.hero__title p::after {
+  margin-left: 10px;
+}
+
+.btn-about {
+  padding: 17px 28px;
+  border: 1px solid var(--white);
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  color: var(--white);
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 20px;
+  margin-top: 50px;
+  z-index: 1;
+  transition: .4s ease;
+}
+
+.btn-about::before {
+  content: '';
+  width: 0;
+  height: 300%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: var(--white);
+  transition: .4s ease;
+  display: block;
+  z-index: -1;
+}
+
+.btn-about:hover::before {
+  width: 105%;
+}
+
+.btn-about:hover {
+  color: var(--blue);
+}
+
+.arrow-down {
+  margin-left: 8px;
+} 
+
+.hero__social-media {
+  display: flex;
+  gap: 22px;
+  position: absolute;
+  bottom: 90px;
+}
