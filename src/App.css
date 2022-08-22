@@ -1,5 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=PT+Mono&family=Roboto:wght@300;400;500;700&display=swap');
 
+/* ---- Global settings ---- */
 :root {
   --blue: #1D1D31;
   --lilac: #57679F;
@@ -24,7 +25,7 @@ html {
 }
 
 body {
-  background-color: var(--white);
+  background-color: #FFF;
   font-size: 1.6rem;
   font-family: "Roboto", sans-serif;
 }
@@ -42,7 +43,20 @@ body {
 }
 
 .btn:hover {
-  opacity: 0.85;
+  opacity: 0.9;
+}
+
+.title span {
+  font-size: 24px;
+  line-height: 27px;
+  color: var(--lilac);
+  font-family: 'PT Mono', sans-serif;
+}
+
+.title h3 {
+  color: var(--black);
+  display: inline;
+  margin-left: 5px;
 }
 
 h1 {
@@ -57,11 +71,17 @@ h2 {
   line-height: 47px;
 }
 
+h3 {
+  font-weight: 700;
+  font-size: 30px;
+}
+
 a {
   text-decoration: none;
 }
 
-/* Section Hero */
+
+/* ---- Section Hero ---- */
 .hero {
   height: calc(100vh - 120px);
   background-color: var(--blue);
@@ -156,11 +176,83 @@ a {
 
 .arrow-down {
   margin-left: 8px;
-} 
+}
 
 .hero__social-media {
   display: flex;
   gap: 22px;
   position: absolute;
   bottom: 90px;
+}
+
+/* ---- Section About ---- */
+#about .container {
+  padding: 100px 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about__image {
+  clip-path: polygon(12% 0, 100% 0, 100% 99%, 0 100%, 0 9%);
+  width: 350px;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.about__image img {
+  width: 100%;
+}
+
+.about__info {
+  max-width: 660px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.about__text {
+  color: var(--gray-200);
+  font-size: 18px;
+  line-height: 150%;
+  margin-top: 27px;
+}
+
+.about__text p:nth-child(2) {
+  margin: 15px 0;
+}
+
+.btn--download {
+  background-color: var(--blue);
+  border-radius: 5px;
+  padding: 17px 31px;
+  color: var(--white);
+  font-weight: 600;
+  font-size: 17px;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* ---- Section Skills ---- */
+.skill {
+  background-color: var(--white-200);
+}
+
+.skill .container {
+  padding: 100px 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.skill__cards__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 230px);
+  justify-content: space-evenly;
+  width: 800px;
+  gap: 30px;
 }

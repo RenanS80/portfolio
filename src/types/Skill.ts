@@ -1,6 +1,6 @@
-export type SocialMedia = {
+export type Skill = {
     id: number;
     name: string;
-    url: string;
+    level: string;
     image: string;
 }

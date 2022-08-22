@@ -1,0 +1,29 @@
+.skill-card {
+    width: 230px;
+    height: 74px;
+    background-color: #FBFAFC;
+    border-radius: 8px;
+    border: 1px solid var(--lilac);
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.skill-card__image {
+    margin-left: 20px;
+    margin-top: 3px;
+}
+
+.skill-card__info p:first-child {
+    font-weight: 700;
+    color: var(--black);
+    letter-spacing: -0.025em;
+}
+
+.skill-card__info p:nth-child(2) {
+    font-size: 15px;
+    line-height: 134.5%;
+    letter-spacing: -0.025em;
+    color: var(--gray-200);
+    margin-top: 4px;
+}

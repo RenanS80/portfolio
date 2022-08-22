@@ -1,3 +1,6 @@
+import Profile from 'assets/images/profile.jpg';
+import DownloadIcon from 'assets/images/download-icon.svg';
+
 import Navbar from 'components/Navbar';
 import SocialMediaIcon from 'components/SocialMediaIcon';
 import { social } from 'data/social';
@@ -6,6 +9,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
 import './App.css';
+import SkillCard from 'components/SkillCard';
+import { skill } from 'data/skill';
 
 function App() {
   return (
@@ -37,7 +42,51 @@ function App() {
             }
 
           </div>
-          
+        </div>
+      </section>
+
+      <section id="about">
+        <div className="container">
+          <div className="about__image">
+            <img src={Profile} alt="Renan" />
+          </div>
+
+          <div className="about__info">
+            <div className="title">
+              <span>01.</span>
+              <h3>Sobre mim</h3>
+            </div>
+            <div className="about__text">
+              <p>Meu nome é Renan Soares, moro no Rio de Janeiro e sou graduando em Sistemas de Informação na Universidade Federal Fluminense (UFF).</p>
+              <p>Sempre gostei da parte visual dos websites, o que me estimulou a dar uma atenção especial ao desenvolvimento front-end em meus estudos.
+                Após concluir o meu primeiro curso online, tive a certeza que iria seguir na área.</p>
+              <p>Acredito que uma interface bem construída - cuja experiência do usuário é o foco - é a chave para um produto/serviço de sucesso.
+                Por conta disso, também tenho estudado técnicas de UX e UI para aplicar no âmbito profissional.</p>
+            </div>
+            <a href={require('assets/cv/curriculum.pdf')} className="btn btn--download" role="button" download>
+              Download CV
+              <img src={DownloadIcon} alt="Download" />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section className="skill">
+        <div className="container">
+          <div className="title">
+            <span>02.</span>
+            <h3>Conhecimentos</h3>
+          </div>
+
+          <div className="skill__cards__container">
+
+            {skill.map(card => (
+              <div key={card.id}>
+                <SkillCard skill={card} />
+              </div>
+            ))}
+
+          </div>
         </div>
       </section>
     </>
