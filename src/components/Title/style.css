@@ -1,0 +1,12 @@
+.title span {
+    font-size: 24px;
+    line-height: 27px;
+    color: var(--lilac);
+    font-family: 'PT Mono', sans-serif;
+}
+
+.title h3 {
+    color: var(--black);
+    display: inline;
+    margin-left: 5px;
+}

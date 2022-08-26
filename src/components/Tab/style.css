@@ -1,0 +1,102 @@
+.tab {
+    position: relative;
+    max-width: 1000px;
+}
+
+.tab__item {
+    display: grid;
+    grid-template-columns: 3fr 9fr;
+}
+
+.tab__item--category {
+    color: var(--black);
+    background-color: #FFF;
+    padding: 17px 20px;
+    border-left: 3px solid var(--gray);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    transition: border 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.tab__item--category:hover {
+    border-left: 3px solid var(--lilac);
+    border-image: var(--lilac);
+    border-image-slice: 1;
+    background-color: var(--purple);
+}
+
+.tab__item--category.active {
+    border-left: 3px solid var(--lilac);
+    border-image: var(--purple);
+    border-image-slice: 1;
+    background-color: var(--gray);
+    font-weight: 500;
+}
+
+
+.tab__item--panel {
+    display: none;
+
+}
+
+.tab__item--panel.active {
+    display: block;
+}
+
+
+.tab__item--info {
+    position: absolute;
+    top: 0;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 27px;
+    opacity: 1;
+    animation: fadeIn .5s ease-in 1;
+    margin-left: 100px;
+}
+
+.tab__item--title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--black);
+}
+
+.tab__item--title h4 > span{
+    margin-left: 5px;
+}
+
+.tab__item--title span {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.platform {
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--lilac);
+}
+
+.tab__item--description {
+    font-size: 16px;
+    line-height: 28px;
+    color: var(--gray-200);
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

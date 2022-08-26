@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Mono&family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Mono&family=Roboto:wght@400;500;700&display=swap');
 
 /* ---- Global settings ---- */
 :root {
@@ -46,19 +46,6 @@ body {
   opacity: 0.9;
 }
 
-.title span {
-  font-size: 24px;
-  line-height: 27px;
-  color: var(--lilac);
-  font-family: 'PT Mono', sans-serif;
-}
-
-.title h3 {
-  color: var(--black);
-  display: inline;
-  margin-left: 5px;
-}
-
 h1 {
   font-weight: 700;
   font-size: 70px;
@@ -74,6 +61,11 @@ h2 {
 h3 {
   font-weight: 700;
   font-size: 30px;
+}
+
+h4 {
+  font-weight: 500;
+  font-size: 24px;
 }
 
 a {
@@ -255,4 +247,12 @@ a {
   justify-content: space-evenly;
   width: 800px;
   gap: 30px;
+}
+
+/* ---- Section Course ---- */
+.course .container {
+  padding: 100px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 65px;
 }

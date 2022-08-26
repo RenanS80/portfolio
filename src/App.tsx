@@ -11,6 +11,8 @@ import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import './App.css';
 import SkillCard from 'components/SkillCard';
 import { skill } from 'data/skill';
+import Title from 'components/Title';
+import Tab from 'components/Tab';
 
 function App() {
   return (
@@ -52,10 +54,8 @@ function App() {
           </div>
 
           <div className="about__info">
-            <div className="title">
-              <span>01.</span>
-              <h3>Sobre mim</h3>
-            </div>
+            <Title order="01" text="Sobre mim" />
+
             <div className="about__text">
               <p>Meu nome é Renan Soares, moro no Rio de Janeiro e sou graduando em Sistemas de Informação na Universidade Federal Fluminense (UFF).</p>
               <p>Sempre gostei da parte visual dos websites, o que me estimulou a dar uma atenção especial ao desenvolvimento front-end em meus estudos.
@@ -73,11 +73,7 @@ function App() {
 
       <section className="skill">
         <div className="container">
-          <div className="title">
-            <span>02.</span>
-            <h3>Conhecimentos</h3>
-          </div>
-
+          <Title order="02" text="Conhecimentos" />
           <div className="skill__cards__container">
 
             {skill.map(card => (
@@ -87,6 +83,13 @@ function App() {
             ))}
 
           </div>
+        </div>
+      </section>
+
+      <section className="course">
+        <div className="container">
+          <Title order="03" text="Cursos" />
+          <Tab />
         </div>
       </section>
     </>
