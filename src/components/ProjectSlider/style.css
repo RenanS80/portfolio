@@ -1,0 +1,160 @@
+.project-slider {
+    display: none;
+}
+
+.project-slider.slider--active {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    animation: fadeUp 0.4s linear backwards;
+}
+
+.project-slider__image {
+    width: 540px;
+    height: 306px;
+    border-radius: 5px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    position: relative;
+}
+
+.project-slider__image.inactive {
+    cursor: auto;
+}
+
+.project-slider__image span {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.project-slider__image span::before {
+    content: 'Em desenvolvimento';
+    position: absolute;
+    width: 150%;
+    height: 40px;
+    background: var(--lilac);
+    color: #000;
+    transform: rotate(-45deg) translateY(-20px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 500;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+.project-slider__image span::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    background: #3F4C79;
+    z-index: -1;
+    box-shadow: 140px -140px #3F4C79;
+}
+
+.project-slider__image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.project-slider__info {
+    width: 38%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.project-slider__info h4 {
+    font-weight: 700;
+    color: var(--lilac);
+    text-align: right;
+    margin-top: 30px;
+}
+
+.project-slider__description {
+    background: rgba(29, 29, 49, 0.95);
+    border-radius: 5px;
+    width: 500px;
+    padding: 30px;
+    position: absolute;
+    top: 50%;  
+    left: 50%; 
+    margin-left: 245px;
+    transform: translate(-50%, -50%);
+}
+
+.project-slider__description p {
+    color: var(--white);
+    font-size: 15px;
+    line-height: 140%;
+    color: var(--white);
+}
+
+.project-slider__tech-external-links {
+    margin-bottom: 0px;
+    text-align: right;
+    color: var(--black);
+}
+
+.project-slider__tech {
+    display: inline-block;
+    padding: 0 5px;
+}
+
+.project-slider__tech-external-links p {
+    font-size: 15px;
+} 
+
+.project-slider__external-links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 30px;
+    margin-top: 15px;
+}
+
+.project-slider__external-links a {
+    transition: .3s ease;
+}
+
+.project-slider__external-links a:hover {
+    opacity: 0.9;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.controls__arrow-left, 
+.controls__arrow-right {
+    color: var(--blue);
+    font-size: 35px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.controls__arrow-left:hover, 
+.controls__arrow-right:hover {
+    transform: scale(1.1);
+} 
+
+@keyframes fadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(4rem);
+    }
+}

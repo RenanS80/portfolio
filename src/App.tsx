@@ -13,6 +13,8 @@ import SkillCard from 'components/SkillCard';
 import { skill } from 'data/skill';
 import Title from 'components/Title';
 import Tab from 'components/Tab';
+import ProjectSlider from 'components/ProjectSlider';
+import { project } from 'data/project';
 
 function App() {
   return (
@@ -90,6 +92,13 @@ function App() {
         <div className="container">
           <Title order="03" text="Cursos" />
           <Tab />
+        </div>
+      </section>
+
+      <section className="project">
+        <div className="container">
+          <Title order="04" text="Projetos" />
+          <ProjectSlider slides={project}  />
         </div>
       </section>
     </>

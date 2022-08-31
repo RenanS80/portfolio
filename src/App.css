@@ -256,3 +256,15 @@ a {
   flex-direction: column;
   gap: 65px;
 }
+
+/* ---- Section Course ---- */
+.project {
+  background-color: var(--white-200);
+}
+
+.project .container {
+  padding: 100px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 65px;
+}
