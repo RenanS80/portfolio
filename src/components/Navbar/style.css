@@ -35,12 +35,7 @@
   width: 100%;
 }
 
-.btn-contact {
-  padding: 16px 32px;
+.btn--contact {
   background: var(--white);
-  border-radius: 5px;
-  font-weight: 600;
-  font-size: 17px;
   color: var(--blue);
-  line-height: 20px;
 }

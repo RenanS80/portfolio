@@ -15,7 +15,7 @@ function Navbar() {
           <img src={Logo} alt="Renan Logo" />
         </div>
 
-        <a href="#contact" role="button" className="btn btn-contact">Contato</a>
+        <a href="#contact" role="button" className="btn btn--large btn--contact">Contato</a>
       </div>
     </header>
   );

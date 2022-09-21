@@ -1,5 +1,6 @@
 import Profile from 'assets/images/profile.jpg';
-import DownloadIcon from 'assets/images/download-icon.svg';
+import DownloadIcon from 'assets/images/download.svg';
+import ArrowIcon from 'assets/images/arrow.svg';
 
 import Navbar from 'components/Navbar';
 import SocialMediaIcon from 'components/SocialMediaIcon';
@@ -15,6 +16,7 @@ import Title from 'components/Title';
 import Tab from 'components/Tab';
 import ProjectSlider from 'components/ProjectSlider';
 import { project } from 'data/project';
+import Footer from 'components/Footer';
 
 function App() {
   return (
@@ -29,7 +31,7 @@ function App() {
             <p>Dev front-end Jr</p>
           </div>
 
-          <a href="#about" role="button" className="btn-about">
+          <a href="#about" role="button" className="btn--about">
             Sobre mim
             <FontAwesomeIcon icon={faChevronDown} className="arrow-down"></FontAwesomeIcon>
           </a>
@@ -65,7 +67,7 @@ function App() {
               <p>Acredito que uma interface bem construída - cuja experiência do usuário é o foco - é a chave para um produto/serviço de sucesso.
                 Por conta disso, também tenho estudado técnicas de UX e UI para aplicar no âmbito profissional.</p>
             </div>
-            <a href={require('assets/cv/curriculum.pdf')} className="btn btn--download" role="button" download>
+            <a href={require('assets/cv/curriculum.pdf')} className="btn btn--large btn--blue mt-40" role="button" download>
               Download CV
               <img src={DownloadIcon} alt="Download" />
             </a>
@@ -98,9 +100,63 @@ function App() {
       <section className="project">
         <div className="container">
           <Title order="04" text="Projetos" />
-          <ProjectSlider slides={project}  />
+          <ProjectSlider slides={project} />
         </div>
       </section>
+
+      <section id="contact">
+        <div className="container">
+          <Title order="05" text="Contato" />
+          <div className="contact__content">
+            <div className="contact__info">
+              <p>Você pode me enviar uma mensagem ou me encontrar nas <a
+                href="https://www.instagram.com/renan_soaresf/"
+                target="_blank"
+                rel="noreferrer">
+                redes sociais
+              </a> e <a
+                href="https://www.linkedin.com/in/renansoaresf/"
+                target="_blank"
+                rel="noreferrer">
+                  LinkedIn
+                </a>
+              </p>
+            </div>
+
+            <div className="contact__form">
+              <form>
+                <div className="contact__input-name-lastname">
+                  <div className="contact__input-name">
+                    <label htmlFor="name">Nome *</label>
+                    <input type="text" name="name" required />
+                  </div>
+                  <div className="contact__input-lastname">
+                    <label htmlFor="lastname">Sobrenome</label>
+                    <input type="text" name="lastname" />
+                  </div>
+                </div>
+                <div className="contact__input-email">
+                  <label htmlFor="email">E-mail *</label>
+                  <input type="email" placeholder="exemplo@email.com" required />
+                </div>
+                <div className="contact__textarea-message">
+                  <label htmlFor="message">Mensagem *</label>
+                  <textarea name="message" rows={10} placeholder="Digite aqui a sua mensagem" required></textarea>
+                </div>
+
+                <div>
+                  <button type="submit" className="btn btn--large btn--blue">
+                    Enviar
+                    <img src={ArrowIcon} alt="Enviar mensagem" />
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <Footer />
     </>
   );
 }
