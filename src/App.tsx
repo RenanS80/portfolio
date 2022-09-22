@@ -1,22 +1,26 @@
-import Profile from 'assets/images/profile.jpg';
-import DownloadIcon from 'assets/images/download.svg';
-import ArrowIcon from 'assets/images/arrow.svg';
+import { social } from 'data/social';
+import { skill } from 'data/skill';
+import { project } from 'data/project';
 
 import Navbar from 'components/Navbar';
+import Title from 'components/Title';
+import SkillCard from 'components/SkillCard';
+import Tab from 'components/Tab';
 import SocialMediaIcon from 'components/SocialMediaIcon';
-import { social } from 'data/social';
+import ProjectSlider from 'components/ProjectSlider';
+import Footer from 'components/Footer';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
+import Profile from 'assets/images/profile.jpg';
+import DownloadIcon from 'assets/images/download.svg';
+
 import './App.css';
-import SkillCard from 'components/SkillCard';
-import { skill } from 'data/skill';
-import Title from 'components/Title';
-import Tab from 'components/Tab';
-import ProjectSlider from 'components/ProjectSlider';
-import { project } from 'data/project';
-import Footer from 'components/Footer';
+import Form from 'components/Form';
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from 'react-toastify';
+
 
 function App() {
   return (
@@ -124,33 +128,8 @@ function App() {
             </div>
 
             <div className="contact__form">
-              <form>
-                <div className="contact__input-name-lastname">
-                  <div className="contact__input-name">
-                    <label htmlFor="name">Nome *</label>
-                    <input type="text" name="name" required />
-                  </div>
-                  <div className="contact__input-lastname">
-                    <label htmlFor="lastname">Sobrenome</label>
-                    <input type="text" name="lastname" />
-                  </div>
-                </div>
-                <div className="contact__input-email">
-                  <label htmlFor="email">E-mail *</label>
-                  <input type="email" placeholder="exemplo@email.com" required />
-                </div>
-                <div className="contact__textarea-message">
-                  <label htmlFor="message">Mensagem *</label>
-                  <textarea name="message" rows={10} placeholder="Digite aqui a sua mensagem" required></textarea>
-                </div>
-
-                <div>
-                  <button type="submit" className="btn btn--large btn--blue">
-                    Enviar
-                    <img src={ArrowIcon} alt="Enviar mensagem" />
-                  </button>
-                </div>
-              </form>
+              <Form />
+              <ToastContainer />
             </div>
           </div>
         </div>
