@@ -1,11 +1,12 @@
 import { useState } from 'react';
+import { toast } from 'react-toastify';
 import emailjs from '@emailjs/browser'
+
+import { EMAIL_ID, PUBLIC_KEY, TEMPLATE_ID } from 'utils/emailjs';
 
 import ArrowIcon from 'assets/images/arrow.svg';
 
 import './style.css';
-import { EMAIL_ID, PUBLIC_KEY, TEMPLATE_ID } from 'utils/emailjs';
-import { toast } from 'react-toastify';
 
 function Form() {
 

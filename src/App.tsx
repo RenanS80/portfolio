@@ -1,3 +1,6 @@
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 import { social } from 'data/social';
 import { skill } from 'data/skill';
 import { project } from 'data/project';
@@ -8,19 +11,17 @@ import SkillCard from 'components/SkillCard';
 import Tab from 'components/Tab';
 import SocialMediaIcon from 'components/SocialMediaIcon';
 import ProjectSlider from 'components/ProjectSlider';
+import Form from 'components/Form';
 import Footer from 'components/Footer';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
 import Profile from 'assets/images/profile.jpg';
+import StrokeEffect from 'assets/images/stroke-effect.svg';
 import DownloadIcon from 'assets/images/download.svg';
 
 import './App.css';
-import Form from 'components/Form';
-import 'react-toastify/dist/ReactToastify.css';
-import { ToastContainer } from 'react-toastify';
-
 
 function App() {
   return (
@@ -58,7 +59,8 @@ function App() {
       <section id="about">
         <div className="container">
           <div className="about__image">
-            <img src={Profile} alt="Renan" />
+            <img className="stroke-e" src={StrokeEffect} alt="Background" />
+            <img className="renan" src={Profile} alt="Renan" />
           </div>
 
           <div className="about__info">
