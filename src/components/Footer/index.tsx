@@ -7,7 +7,7 @@ function Footer() {
     return (
         <footer>
             <div className="container">
-                <p>@ 2022 - Renan Soares</p>
+                <p>@ 2023 - Renan Soares</p>
 
                 <a href="mailto:renansoaresffc@gmail.com" className="footer__email">
                     <FontAwesomeIcon icon={faEnvelope} className="email-icon"></FontAwesomeIcon>

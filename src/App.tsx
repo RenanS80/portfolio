@@ -33,7 +33,7 @@ function App() {
           <div className="hero__title">
             <h2>Olá, mundo</h2>
             <h1>Sou Renan Soares</h1>
-            <p>Dev front-end Jr</p>
+            <p>Analista de Sistemas Jr</p>
           </div>
 
           <a href="#about" role="button" className="btn--about">
@@ -96,9 +96,9 @@ function App() {
         </div>
       </section>
 
-      <section className="course">
+      <section className="certification">
         <div className="container">
-          <Title order="03" text="Cursos" />
+          <Title order="03" text="Certificações" />
           <Tab />
         </div>
       </section>

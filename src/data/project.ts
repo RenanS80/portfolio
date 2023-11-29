@@ -23,8 +23,8 @@ export const project = [
         image: 'https://ik.imagekit.io/zqxyh6u3ylz/Portf%C3%B3lio/learn_1_uCG35VU.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1661979761001',
         description: 'Desenvolvida como meu TCC (Sistemas de Informação - UFF), Learn é uma plataforma web para organização e divulgação de conteúdos didáticos, cursos e eventos para serem utilizados por estudantes de tecnologia.',
         technologies: ['Spring Framework','PostgreSQL', 'Typescript', 'React', 'Axios'],
-        githubUrl: '',
-        demoUrl: ''
+        githubUrl: 'https://github.com/RenanS80/plataforma-educacional-tcc',
+        demoUrl: 'https://plataforma-educacional-learn.netlify.app/'
     },
     {
         id: 4,

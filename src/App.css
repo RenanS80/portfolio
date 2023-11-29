@@ -289,15 +289,19 @@ a {
   gap: 30px;
 }
 
-/* ---- Section Course ---- */
-.course .container {
+/* ---- Section Certification ---- */
+.certification {
+  padding-bottom: 100px;
+}
+
+.certification .container {
   padding: 100px 15px;
   display: flex;
   flex-direction: column;
   gap: 65px;
 }
 
-/* ---- Section Course ---- */
+/* ---- Section certification ---- */
 .project {
   background-color: var(--white-200);
 }

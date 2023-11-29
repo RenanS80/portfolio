@@ -39,7 +39,7 @@ function ProjectSlider({ slides }: Props) {
                 <div className={index === current ? "project-slider slider--active" : "project-slider"} key={index}>
                     <a href={slide.demoUrl} target="_blank" rel="noreferrer" className={slide.demoUrl.length <= 0 ? "project-slider__image inactive" : "project-slider__image"}>
                         {slide.demoUrl.length <= 0 ? <span></span> : ''}
-                        <img src={slide.image} alt="Spider-Man: Miles Morales" />
+                        <img src={slide.image} alt={slide.name} />
                     </a>
 
                     <div className="project-slider__info">
