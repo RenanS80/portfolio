@@ -72,7 +72,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
 }
 
 .project-slider__info h4 {
@@ -157,4 +156,37 @@
         opacity: 0;
         transform: translateY(4rem);
     }
+}
+
+
+/* ---- Media queries ---- */
+@media (max-width: 1030px) {   
+    .project-slider.slider--active {
+        flex-direction: column-reverse;
+    }
+
+    .project-slider__info {
+        width: 100%;
+        align-items: center;
+    }
+
+    .project-slider__description {
+        position: unset;
+        top: auto;
+        left: auto;
+        margin-left: 0px;
+        transform: unset;
+        width: 540px;
+        margin: 35px 0px;
+    }
+
+    .project-slider h4 {
+        margin-top: 0px;
+    }
+
+    .project-slider__tech,
+    .project-slider__external-links {
+        display: none;
+    }
+  
 }

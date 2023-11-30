@@ -67,11 +67,9 @@ function App() {
             <Title order="01" text="Sobre mim" />
 
             <div className="about__text">
-              <p>Meu nome é Renan Soares, moro no Rio de Janeiro e sou graduando em Sistemas de Informação na Universidade Federal Fluminense (UFF).</p>
-              <p>Sempre gostei da parte visual dos websites, o que me estimulou a dar uma atenção especial ao desenvolvimento front-end em meus estudos.
-                Após concluir o meu primeiro curso online, tive a certeza que iria seguir na área.</p>
-              <p>Acredito que uma interface bem construída - cuja experiência do usuário é o foco - é a chave para um produto/serviço de sucesso.
-                Por conta disso, também tenho estudado técnicas de UX e UI para aplicar no âmbito profissional.</p>
+              <p>Meu nome é Renan, moro no Rio de Janeiro, sou desenvolvedor Salesforce Jr na Deloitte e recém-graduado em Sistemas de Informação na Universidade Federal Fluminense (UFF).</p>
+              <p>Sempre gostei da parte visual dos websites e como eles eram construídos, desde a prototipação ao desenvolvimento, o que me estimulou a estudar as áreas de front-end e UI Design.</p>
+              <p>Ao optar por trabalhar com Salesforce, enxerguei uma oportunidade para conhecer a plataforma de CRM e a linguagem Apex, sem abandonar o front-end.</p>
             </div>
             <a href={require('assets/cv/curriculum.pdf')} className="btn btn--large btn--blue mt-40" role="button" download>
               Download CV
@@ -115,17 +113,7 @@ function App() {
           <Title order="05" text="Contato" />
           <div className="contact__content">
             <div className="contact__info">
-              <p>Você pode me enviar uma mensagem ou me encontrar nas <a
-                href="https://www.instagram.com/renan_soaresf/"
-                target="_blank"
-                rel="noreferrer">
-                redes sociais
-              </a> e <a
-                href="https://www.linkedin.com/in/renansoaresf/"
-                target="_blank"
-                rel="noreferrer">
-                  LinkedIn
-                </a>
+              <p>Você pode me enviar uma mensagem ou me encontrar no <a href="https://www.linkedin.com/in/renansoaresf/" target="_blank" rel="noreferrer"> LinkedIn</a>
               </p>
             </div>
 

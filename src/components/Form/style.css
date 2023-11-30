@@ -58,3 +58,20 @@
     width: 300px;
   }
   
+
+  /* ---- Media queries ---- */
+  @media (max-width: 667px) {
+    .contact__input-lastname {
+      display: none;
+    }
+
+    .contact__input-name-lastname {
+      display: block;
+    }
+
+    .contact__input-name input {
+      width: 100%;
+    }
+
+    
+  }
