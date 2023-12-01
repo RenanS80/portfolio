@@ -99,3 +99,30 @@
         opacity: 1;
     }
 }
+
+/* ---- Media queries ---- */
+@media (max-width: 600px) {
+    .tab__item {
+        display: block;
+    }
+
+    .tab__item:last-child {
+        margin-top: 30px;
+    }
+
+    .tab__item--category {
+        background-color: var(--gray);
+        border-left: 3px solid var(--lilac);
+    }
+
+    .tab__item--panel {
+        display: block;
+        margin-top: 20px;
+    }
+
+    .tab__item--info {
+        position: relative;
+        margin-left: 0;
+    }
+
+}

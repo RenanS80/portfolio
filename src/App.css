@@ -104,6 +104,37 @@ a {
   text-decoration: none;
 }
 
+ul {
+  list-style-type: none;
+}
+
+
+/* Media query global titles */
+@media (max-width: 992px) {
+  h1 {
+    font-size: 5.25rem;
+  }
+
+  h2 {
+      font-size: 3.6rem;
+      line-height: 4.8rem;
+  }
+
+  h3 {
+      font-size: 2.25rem;
+      line-height: 3.6rem;
+  }
+
+  h4 {
+      font-size: 1.8rem;
+      line-height: 2.5rem;
+  }
+
+  p {
+    font-size: 1.6rem !important;
+  }
+}
+
 
 /* ---- Section Hero ---- */
 .hero {
@@ -132,6 +163,7 @@ a {
 
 .hero__title h1 {
   color: var(--lilac);
+  line-height: 120%;
 }
 
 .hero__title p {
@@ -378,7 +410,6 @@ a {
 
 @media (max-width: 1010px) {
   .project .container {
-    border: 1px solid red;
     flex-direction: column;
   }
 }
@@ -391,8 +422,13 @@ a {
 
 @media (max-width: 667px) {
   .contact__form {
-    border: 1px solid green;
     padding: 0 10px;
     width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .certification {
+    padding-bottom: 0px;
   }
 }

@@ -71,10 +71,6 @@ function App() {
               <p>Sempre gostei da parte visual dos websites e como eles eram construídos, desde a prototipação ao desenvolvimento, o que me estimulou a estudar as áreas de front-end e UI Design.</p>
               <p>Ao optar por trabalhar com Salesforce, enxerguei uma oportunidade para conhecer a plataforma de CRM e a linguagem Apex, sem abandonar o front-end.</p>
             </div>
-            <a href={require('assets/cv/curriculum.pdf')} className="btn btn--large btn--blue mt-40" role="button" download>
-              Download CV
-              <img src={DownloadIcon} alt="Download" />
-            </a>
           </div>
         </div>
       </section>

@@ -14,10 +14,7 @@ function Tab() {
 
         <div className="tab">
             <div className="tab__item">
-                <h3
-                    className={toggleCertification === 1 ? "tab__item--category active" : "tab__item--category"}
-                    onClick={() => toggleTab(1)}
-                >
+                <h3 className={toggleCertification === 1 ? "tab__item--category active" : "tab__item--category"} onClick={() => toggleTab(1)}>
                     Salesforce Associate
                 </h3>
                 <div className={toggleCertification === 1 ? "tab__item--panel active" : "tab__item--panel"}>
