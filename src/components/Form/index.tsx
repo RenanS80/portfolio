@@ -48,7 +48,7 @@ function Form() {
         <form onSubmit={sendEmail}>
             <div className="contact__input-name-lastname">
                 <div className="contact__input-name">
-                    <label htmlFor="name">Nome <span className="text-red">*</span></label>
+                    <label htmlFor="name">Nome <span className="text-red">&#42;</span></label>
                     <input
                         type="text"
                         name="name"
@@ -68,7 +68,7 @@ function Form() {
                 </div>
             </div>
             <div className="contact__input-email">
-                <label htmlFor="email">E-mail <span className="text-red">*</span></label>
+                <label htmlFor="email">E-mail <span className="text-red">&#42;</span></label>
                 <input
                     type="email"
                     placeholder="exemplo@email.com"
@@ -78,7 +78,7 @@ function Form() {
                 />
             </div>
             <div className="contact__textarea-message">
-                <label htmlFor="message">Mensagem <span className="text-red">*</span></label>
+                <label htmlFor="message">Mensagem <span className="text-red">&#42;</span></label>
                 <textarea
                     name="message"
                     rows={10}
@@ -92,7 +92,7 @@ function Form() {
             <div>
                 <button type="submit" className="btn btn--large btn--blue">
                     Enviar
-                    <img src={ArrowIcon} alt="Enviar mensagem" />
+                    <img src={ArrowIcon} alt="Enviar mensagem"/>
                 </button>
             </div>
         </form>

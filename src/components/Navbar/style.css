@@ -11,11 +11,11 @@ header .container {
 }
 
 nav {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  gap: 40px;
+  gap: 4rem;
 }
 
 nav ul {
@@ -31,7 +31,7 @@ nav li {
 
 nav a {
   padding: inherit;
-  border-radius: 8px;
+  border-radius: 0.8rem;
   font-weight: 500;
   line-height: 2.4rem;
   transition: .4s ease;
@@ -39,15 +39,13 @@ nav a {
 
 .header__lang-option {
   display: flex;
-  gap: 40px;
-  font-size: 17px;
-  line-height: 20px;
+  gap: 4rem;
 }
 
 .header__lang-option a {
   color: var(--white);
-  font-size: 17px;
-  line-height: 20px;
+  font-size: 1.7rem;
+  line-height: 2rem;
 }
 
 .header__lang-option :first-child {
@@ -59,8 +57,8 @@ nav a {
   display: block;
   position: absolute;
   width: 75%;
-  height: 2px;
-  bottom: 6px;
+  height: 0.2rem;
+  bottom: 0.6rem;
   background-color: var(--white);
 }
 

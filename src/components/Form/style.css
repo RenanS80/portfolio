@@ -1,9 +1,9 @@
 .contact__form form {
+  width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 25px;
-    width: 100%;
+    gap: 2.5rem;
     color: var(--black);
   }
   
@@ -18,19 +18,19 @@
   .contact__textarea-message {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 1rem;
   }
   
   .contact__form input {
-    height: 50px;
+    height: 5rem;
   }
   
   .contact__form input,
   .contact__form textarea {
+    padding: 2rem;
     background-color: var(--white-200);
+    border: 0.1rem solid var(--gray-border);
     border-radius: 5px;
-    border: 1px solid var(--gray-border);
-    padding: 20px;
     font-family: 'Roboto', sans-serif;
     color: var(--black);
   }
@@ -40,7 +40,7 @@
   .contact__form textarea:active,
   .contact__form textarea:focus {
     outline-color: var(--lilac);
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(88, 152, 236, 0.6);
+    box-shadow: 0 0.1rem 0.1rem rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(88, 152, 236, 0.6);
   }
   
   .contact__form input::placeholder,
@@ -49,13 +49,13 @@
   }
   
   .contact__form textarea::placeholder {
-    font-size: 14px;
+    font-size: 1.4rem;
     font-family: 'Roboto', sans-serif;
   }
   
   .contact__input-name input,
   .contact__input-lastname input {
-    width: 300px;
+    width: 30rem;
   }
   
 
@@ -72,6 +72,4 @@
     .contact__input-name input {
       width: 100%;
     }
-
-    
   }

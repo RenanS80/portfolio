@@ -1,6 +1,6 @@
 .tab {
+    max-width: 100rem;
     position: relative;
-    max-width: 1000px;
 }
 
 .tab__item {
@@ -9,26 +9,26 @@
 }
 
 .tab__item--category {
+    padding: 1.7rem 2rem;
     color: var(--black);
     background-color: #FFF;
-    padding: 17px 20px;
-    border-left: 3px solid var(--gray);
+    border-left: 0.3rem solid var(--gray);
     font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
+    font-size: 1.8rem;
+    line-height: 2.1rem;
     transition: border 0.3s ease-in-out;
     cursor: pointer;
 }
 
 .tab__item--category:hover {
-    border-left: 3px solid var(--lilac);
+    border-left: 0.3rem solid var(--lilac);
     border-image: var(--lilac);
     border-image-slice: 1;
     background-color: var(--purple);
 }
 
 .tab__item--category.active {
-    border-left: 3px solid var(--lilac);
+    border-left: 0.3rem solid var(--lilac);
     border-image: var(--purple);
     border-image-slice: 1;
     background-color: var(--gray);
@@ -37,7 +37,6 @@
 
 .tab__item--panel {
     display: none;
-
 }
 
 .tab__item--panel.active {
@@ -45,17 +44,17 @@
 }
 
 .tab__item--info {
-    position: absolute;
-    top: 0;
-    padding: 1rem;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: flex-start;
-    gap: 27px;
+    justify-content: flex-start;
+    gap: 2.7rem;
+    margin-left: 10rem;
+    padding: 1rem;
+    position: absolute;
+    top: 0;
     opacity: 1;
     animation: fadeIn .5s ease-in 1;
-    margin-left: 100px;
 }
 
 .tab__item--title {
@@ -67,25 +66,25 @@
 }
 
 .tab__item--title h4 > span{
-    margin-left: 5px;
+    margin-left: 0.5rem;
 }
 
 .tab__item--title span {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
 }
 
 .credential-id {
     font-weight: 500;
-    font-size: 16px;
+    font-size: 1.6rem;
     color: var(--lilac);
     text-decoration: underline;
 }
 
 .tab__item--description {
-    font-size: 16px;
-    line-height: 28px;
+    font-size: 1.6rem;
+    line-height: 2.8rem;
     color: var(--gray-200);
 }
 
@@ -107,22 +106,21 @@
     }
 
     .tab__item:last-child {
-        margin-top: 30px;
+        margin-top: 3rem;
     }
 
     .tab__item--category {
         background-color: var(--gray);
-        border-left: 3px solid var(--lilac);
+        border-left: 0.3rem solid var(--lilac);
     }
 
     .tab__item--panel {
         display: block;
-        margin-top: 20px;
+        margin-top: 2rem;
     }
 
     .tab__item--info {
         position: relative;
         margin-left: 0;
     }
-
 }

@@ -19,7 +19,6 @@ import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
 import Profile from 'assets/images/profile.jpg';
 import StrokeEffect from 'assets/images/stroke-effect.svg';
-import DownloadIcon from 'assets/images/download.svg';
 
 import './App.css';
 

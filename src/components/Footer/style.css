@@ -3,22 +3,31 @@ footer {
 }
 
 footer .container {
-    padding: 35px 15px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    color: #C9C9C9;
+    justify-content: space-between;
+    padding: 3.5rem 1.5rem;
+    color: var(--footer-text);
 }
 
 .footer__email {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 15px;
-    color: #C9C9C9;
+    gap: 1.5rem;
+    color: var(--footer-text);
 }
 
 .email-icon {
     color: var(--lilac);
-    font-size: 20px;
+    font-size: 2rem;
+}
+
+
+/* ---- Media queries ---- */
+@media (max-width: 455px) {
+    footer .container {
+        flex-direction: column;
+        gap: 2rem;
+    }
 }

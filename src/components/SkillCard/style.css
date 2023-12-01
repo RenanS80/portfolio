@@ -1,29 +1,29 @@
 .skill-card {
-    width: 230px;
-    height: 74px;
-    background-color: #FBFAFC;
-    border-radius: 8px;
-    border: 1px solid var(--lilac);
+    width: 23rem;
+    height: 7.4rem;
     display: flex;
     align-items: center;
-    gap: 18px;
+    gap: 1.8rem;
+    background-color: #FBFAFC;
+    border-radius: 0.8rem;
+    border: 0.1rem solid var(--lilac);
 }
 
 .skill-card__image {
-    margin-left: 20px;
-    margin-top: 3px;
+    margin-top: 0.3rem;
+    margin-left: 2rem;
 }
 
 .skill-card__info p:first-child {
-    font-weight: 700;
     color: var(--black);
+    font-weight: 700;
     letter-spacing: -0.025em;
 }
 
 .skill-card__info p:nth-child(2) {
-    font-size: 15px;
+    margin-top: 0.4rem;
+    color: var(--gray-200);
+    font-size: 1.5rem;
     line-height: 134.5%;
     letter-spacing: -0.025em;
-    color: var(--gray-200);
-    margin-top: 4px;
 }

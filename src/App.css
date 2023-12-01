@@ -11,6 +11,7 @@
   --gray-200: #6D6F70;
   --gray-border: #BDBDBD;
   --red: #F8516F;
+  --footer-text: #C9C9C9;
 
   font-size: 62.5%;
 }
@@ -44,8 +45,8 @@ body {
 }
 
 .container {
-  max-width: 1220px;
-  padding: 0 15px;
+  max-width: 122rem;
+  padding: 0 1.5rem;
   margin: 0 auto;
   height: 100%;
 }
@@ -60,18 +61,18 @@ body {
 }
 
 .btn--large {
-  padding: 16px 32px;
-  border-radius: 5px;
+  padding: 1.6rem 3.2rem;
+  border-radius: 0.5rem;
   font-weight: 600;
-  font-size: 17px;
+  font-size: 1.7rem;
   border: none;
   color: var(--blue);
-  line-height: 20px;
+  line-height: 2rem;
   cursor: pointer;
 }
 
 .mt-40 {
-  margin-top: 40px;
+  margin-top: 4rem;
 }
 
 .text-red {
@@ -80,24 +81,24 @@ body {
 
 h1 {
   font-weight: 700;
-  font-size: 70px;
-  line-height: 55px;
+  font-size: 7rem;
+  line-height: 5.5rem;
 }
 
 h2 {
   font-weight: 700;
-  font-size: 40px;
-  line-height: 47px;
+  font-size: 4rem;
+  line-height: 4.7rem;
 }
 
 h3 {
   font-weight: 700;
-  font-size: 30px;
+  font-size: 3rem;
 }
 
 h4 {
   font-weight: 500;
-  font-size: 24px;
+  font-size: 2.4rem;
 }
 
 a {
@@ -138,9 +139,9 @@ ul {
 
 /* ---- Section Hero ---- */
 .hero {
-  height: calc(100vh - 120px);
-  background-color: var(--blue);
+  height: calc(100vh - 12rem);
   position: relative;
+  background-color: var(--blue);
 }
 
 .hero .container {
@@ -150,15 +151,15 @@ ul {
 }
 
 .hero__title {
-  padding: 0 10px;
+  padding: 0 1rem;
+  margin-top: 18rem;
   text-align: center;
-  margin-top: 180px;
 }
 
 .hero__title h2 {
   color: var(--white-200);
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
 }
 
 .hero__title h1 {
@@ -167,12 +168,12 @@ ul {
 }
 
 .hero__title p {
+  position: relative;
+  margin-top: 3.5rem;
+  color: var(--white);
   text-transform: uppercase;
   font-weight: 300;
-  font-size: 18px;
-  color: var(--white);
-  margin-top: 35px;
-  position: relative;
+  font-size: 1.8rem;
 }
 
 .hero__title p::before,
@@ -180,30 +181,30 @@ ul {
   content: '';
   position: absolute;
   height: 100%;
-  width: 1px;
+  width: 0.1rem;
   background-color: var(--white);
 }
 
 .hero__title p::before {
-  margin-left: -10px;
+  margin-left: -1rem;
 }
 
 .hero__title p::after {
-  margin-left: 10px;
+  margin-left: 1rem;
 }
 
 .btn--about {
-  padding: 17px 28px;
-  border: 1px solid var(--white);
   position: relative;
+  margin-top: 5rem;
+  padding: 1.7rem 2.8rem;
   overflow: hidden;
+  border: 0.1rem solid var(--white);
+  border-radius: 0.5rem;
   background-color: transparent;
   color: var(--white);
-  border-radius: 5px;
   font-weight: 600;
-  font-size: 17px;
-  line-height: 20px;
-  margin-top: 50px;
+  font-size: 1.7rem;
+  line-height: 2rem;
   z-index: 1;
   transition: .4s ease;
 }
@@ -212,13 +213,13 @@ ul {
   content: '';
   width: 0;
   height: 300%;
+  display: block;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(45deg);
   background: var(--white);
   transition: .4s ease;
-  display: block;
   z-index: -1;
 }
 
@@ -231,33 +232,31 @@ ul {
 }
 
 .arrow-down {
-  margin-left: 8px;
+  margin-left: 0.8rem;
 }
 
 .hero__social-media {
   display: flex;
-  gap: 22px;
+  gap: 2.2rem;
   position: absolute;
-  bottom: 90px;
+  bottom: 9rem;
 }
 
 /* ---- Section About ---- */
 #about .container {
-  padding: 100px 15px;
   display: flex;
   justify-content: space-between;
+  padding: 10rem 1.5rem;
 }
 
 .about__image { 
-  width: 350px;
-  height: 350px;
+  width: 35rem;
+  height: 35rem;
   display: flex;
   align-items: center;
   justify-content: center; 
   position: relative;
 }
-
-
 
 .about__image .renan {
   width: 100%;
@@ -269,12 +268,12 @@ ul {
 
 .about__image .stroke-e {
   position: absolute;
-  top: -12px;
-  left: -12px;
+  top: -1.2rem;
+  left: -1.2rem;
 }
 
 .about__info {
-  max-width: 660px;
+  max-width: 66rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -282,22 +281,22 @@ ul {
 
 .about__text {
   color: var(--gray-200);
-  font-size: 18px;
+  font-size: 1.8rem;
   line-height: 150%;
-  margin-top: 27px;
+  margin-top: 2.7rem;
 }
 
 .about__text p:nth-child(2) {
-  margin: 15px 0;
+  margin: 1.5rem 0;
 }
 
 .btn--blue {
-  background-color: var(--blue);
-  color: var(--white);
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 1rem;
+  background-color: var(--blue);
+  color: var(--white);
 }
 
 /* ---- Section Skills ---- */
@@ -306,30 +305,30 @@ ul {
 }
 
 .skill .container {
-  padding: 100px 15px;
   display: flex;
-  gap: 65px;
   flex-direction: column;
+  gap: 65px;
+  padding: 10rem 1.5rem;
 }
 
 .skill__cards__container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 230px);
-  justify-content: space-between;
   width: 100%;
-  gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 23rem);
+  justify-content: space-between;
+  gap: 3rem;
 }
 
 /* ---- Section Certification ---- */
 .certification {
-  padding-bottom: 100px;
+  padding-bottom: 10rem;
 }
 
 .certification .container {
-  padding: 100px 15px;
   display: flex;
   flex-direction: column;
-  gap: 65px;
+  gap: 6.5rem;
+  padding: 10rem 1.5rem;
 }
 
 /* ---- Section certification ---- */
@@ -338,18 +337,18 @@ ul {
 }
 
 .project .container {
-  padding: 100px 15px;
   display: flex;
   flex-direction: column;
-  gap: 65px;
+  gap: 6.5rem;
+  padding: 10rem 1.5rem;
 }
 
 /* ---- Section Contact ---- */
 #contact .container {
-  padding: 100px 15px;
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 5rem;
+  padding: 10rem 1.5rem;
 }
 
 .contact__content {
@@ -358,12 +357,12 @@ ul {
 }
 
 .contact__info {
-  max-width: 415px;
+  max-width: 41.5rem;
 }
 
 .contact__info p {
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
   color: var(--gray-200);
 }
 
@@ -378,29 +377,25 @@ ul {
 }
 
 .contact__form {
-  width: 620px;
+  width: 62rem;
 }
 
 
 /* ---- Media queries ---- */
 @media (max-width: 1073px) {
-  #about .container {
+  #about .container,
+  .contact__content {
     flex-direction: column;
-    align-items: center;
-    gap: 50px;
+    gap: 5rem;
   }
 
+  #about .container,
   .about__info,
   .skill .container,
   .certification .container,
   .project .container,
   #contact .container {
     align-items: center;
-  }
-
-  .contact__content {
-    flex-direction: column;
-    gap: 50px;
   }
 
   .contact__info {
@@ -422,13 +417,13 @@ ul {
 
 @media (max-width: 667px) {
   .contact__form {
-    padding: 0 10px;
+    padding: 0 1rem;
     width: 100%;
   }
 }
 
 @media (max-width: 600px) {
   .certification {
-    padding-bottom: 0px;
+    padding-bottom: 0;
   }
 }
