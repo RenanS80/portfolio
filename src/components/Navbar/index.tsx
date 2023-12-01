@@ -1,9 +1,18 @@
 import { useState } from "react";
+import { I18N_STORAGE_KEY } from "utils/lang";
+import { i18n } from "translate/i18n";
+
 import Logo from "assets/images/logo.png";
 import "./style.css";
 
 function Navbar() {
   const [mobileToggle, setMobileToggle] = useState(false);
+  const [language] = useState(localStorage.getItem(I18N_STORAGE_KEY));
+
+  const handleSelectChange = (event: any) => {
+    localStorage.setItem(I18N_STORAGE_KEY, event.target.value);
+    window.location.reload();
+  }
 
   return (
     <header>
@@ -21,20 +30,16 @@ function Navbar() {
 
           <nav>
             <div>
-              <ul>
-                <li className="header__lang-option">
-                  <a href="/">Português</a>
-                </li>
-                <li className="header__lang-option">
-                  <a href="/">Inglês</a>
-                </li>
-              </ul>
+              <select onChange={handleSelectChange} value={language!}>
+                <option value="pt-BR">Português</option>
+                <option value="en-US">Inglês</option>
+              </select>
             </div>
 
             <div>
               <ul>
                 <li>
-                  <a href="#contact" role="button" className="btn btn--large btn--contact">Contato</a>
+                  <a href="#contact" role="button" className="btn btn--large btn--contact">{i18n.t('navbar.contact')}</a>
                 </li>
               </ul>
             </div>

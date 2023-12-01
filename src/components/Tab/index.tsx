@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import { Link } from "react-router-dom";
+import { i18n } from "translate/i18n";
+
 import './style.css';
 
 function Tab() {
@@ -28,8 +30,7 @@ function Tab() {
                         </Link>
                         <blockquote cite="https://trailhead.salesforce.com/en/credentials/associate">
                             <p className="tab__item--description">
-                                "A certificação Salesforce Associate foi projetada para indivíduos que têm um conhecimento fundamental de como uma plataforma de CRM integrada resolve o 
-                                desafio de conectar departamentos e dados de clientes, e que podem ter até 6 meses de experiência de usuário do Salesforce." - Trailhead
+                                {i18n.t('certifications.associateDescription')}
                             </p>
                         </blockquote>
 
@@ -52,7 +53,7 @@ function Tab() {
                         </Link>
                         <blockquote cite="https://trailhead.salesforce.com/en/credentials/platformappbuilder">
                             <p className="tab__item--description">
-                                "Os candidatos devem ter experiência em projetar, construir e implementar aplicativos personalizados usando os recursos de personalização declarativa da Salesforce Platform." - Trailhead
+                                {i18n.t('certifications.appBuilderDescription')}
                             </p>
                         </blockquote>
                     </div>

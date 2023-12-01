@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { toast } from 'react-toastify';
 import emailjs from '@emailjs/browser'
+import { i18n } from "translate/i18n";
+import { I18N_STORAGE_KEY } from "utils/lang";
 
 import { EMAIL_ID, PUBLIC_KEY, TEMPLATE_ID } from 'utils/emailjs';
 
@@ -14,6 +16,8 @@ function Form() {
     const [lastName, setLastName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
+
+    const [language] = useState(localStorage.getItem(I18N_STORAGE_KEY));
 
     const sendEmail = (e: React.SyntheticEvent) => {
         e.preventDefault();
@@ -32,7 +36,7 @@ function Form() {
 
         emailjs.send(EMAIL_ID, TEMPLATE_ID, TEMPLATE_PARAMS, PUBLIC_KEY)
             .then((response) => {
-                toast.success('Mensagem enviada com sucesso.');
+                {toast.success(language === 'en-US' ? 'Message sent successfully' : 'Mensagem enviada com sucesso.')}
 
                 /* Limpando os inputs após envio */
                 setName('');
@@ -48,7 +52,7 @@ function Form() {
         <form onSubmit={sendEmail}>
             <div className="contact__input-name-lastname">
                 <div className="contact__input-name">
-                    <label htmlFor="name">Nome <span className="text-red">&#42;</span></label>
+                    <label htmlFor="name">{i18n.t('contact.form.firstName')} <span className="text-red">&#42;</span></label>
                     <input
                         type="text"
                         name="name"
@@ -58,7 +62,7 @@ function Form() {
                     />
                 </div>
                 <div className="contact__input-lastname">
-                    <label htmlFor="lastname">Sobrenome</label>
+                    <label htmlFor="lastname">{i18n.t('contact.form.lastName')} </label>
                     <input
                         type="text"
                         name="lastname"
@@ -71,18 +75,18 @@ function Form() {
                 <label htmlFor="email">E-mail <span className="text-red">&#42;</span></label>
                 <input
                     type="email"
-                    placeholder="exemplo@email.com"
+                    placeholder={i18n.t('contact.form.emailPlaceholder')} 
                     onChange={(e) => setEmail(e.target.value)}
                     value={email}
                     required
                 />
             </div>
             <div className="contact__textarea-message">
-                <label htmlFor="message">Mensagem <span className="text-red">&#42;</span></label>
+                <label htmlFor="message">{i18n.t('contact.form.message')} <span className="text-red">&#42;</span></label>
                 <textarea
                     name="message"
                     rows={10}
-                    placeholder="Digite aqui a sua mensagem"
+                    placeholder={i18n.t('contact.form.messagePlaceholder')} 
                     onChange={(e) => setMessage(e.target.value)}
                     value={message}
                     required
@@ -91,8 +95,8 @@ function Form() {
 
             <div>
                 <button type="submit" className="btn btn--large btn--blue">
-                    Enviar
-                    <img src={ArrowIcon} alt="Enviar mensagem"/>
+                    {i18n.t('contact.form.button')} 
+                    <img src={ArrowIcon} alt={language === 'en-US' ? "Send message" : "Enviar mensagem"}/>
                 </button>
             </div>
         </form>

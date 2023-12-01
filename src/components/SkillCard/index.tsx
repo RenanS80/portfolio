@@ -1,3 +1,6 @@
+import { useState } from "react";
+import { I18N_STORAGE_KEY } from "utils/lang";
+
 import { Skill } from 'types/Skill';
 import './style.css';
 
@@ -6,6 +9,9 @@ type Props = {
 }
 
 function SkillCard({ skill } : Props) {
+
+  const [language] = useState(localStorage.getItem(I18N_STORAGE_KEY));
+
   return (
     <div className="skill-card">
         <div className="skill-card__image">
@@ -13,7 +19,7 @@ function SkillCard({ skill } : Props) {
         </div>
         <div className="skill-card__info">
             <p>{skill.name}</p>
-            <p>{skill.level}</p>
+            <p>{language === 'en-US' ? skill.levelEn : skill.level}</p>
         </div>
     </div>
   );

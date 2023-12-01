@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import { I18N_STORAGE_KEY } from "utils/lang";
+import { i18n } from "translate/i18n";
 
 import { project } from 'data/project';
 import { Project } from 'types/Project';
@@ -20,6 +22,7 @@ function ProjectSlider({ slides }: Props) {
 
     const [current, setCurrent] = useState(0);
     const length = slides.length;
+    const [language] = useState(localStorage.getItem(I18N_STORAGE_KEY));
 
     const nextSlide = () => {
         setCurrent(current === length - 1 ? 0 : current + 1);
@@ -45,7 +48,7 @@ function ProjectSlider({ slides }: Props) {
                     <div className="project-slider__info">
                         <h4>{slide.name}</h4>
                         <div className="project-slider__description">
-                            <p>{slide.description}</p>
+                            <p>{language === 'en-US' ? slide.descriptionEn : slide.description}</p>
                         </div>
 
                         <div className="project-slider__tech-external-links">

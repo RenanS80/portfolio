@@ -1,5 +1,6 @@
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { i18n } from './translate/i18n'; 
 
 import { social } from 'data/social';
 import { skill } from 'data/skill';
@@ -30,13 +31,13 @@ function App() {
       <section className="hero">
         <div className="container">
           <div className="hero__title">
-            <h2>Olá, mundo</h2>
-            <h1>Sou Renan Soares</h1>
-            <p>Analista de Sistemas Jr</p>
+            <h2>{i18n.t('hero.hello')}</h2>
+            <h1>{i18n.t('hero.name')}</h1>
+            <p>{i18n.t('hero.role')}</p>
           </div>
 
           <a href="#about" role="button" className="btn--about">
-            Sobre mim
+            {i18n.t('hero.aboutBtn')}
             <FontAwesomeIcon icon={faChevronDown} className="arrow-down"></FontAwesomeIcon>
           </a>
 
@@ -63,12 +64,12 @@ function App() {
           </div>
 
           <div className="about__info">
-            <Title order="01" text="Sobre mim" />
+            <Title order="01" text={i18n.t('about.title')} />
 
             <div className="about__text">
-              <p>Meu nome é Renan, moro no Rio de Janeiro, sou desenvolvedor Salesforce Jr na Deloitte e recém-graduado em Sistemas de Informação na Universidade Federal Fluminense (UFF).</p>
-              <p>Sempre gostei da parte visual dos websites e como eles eram construídos, desde a prototipação ao desenvolvimento, o que me estimulou a estudar as áreas de front-end e UI Design.</p>
-              <p>Ao optar por trabalhar com Salesforce, enxerguei uma oportunidade para conhecer a plataforma de CRM e a linguagem Apex, sem abandonar o front-end.</p>
+              <p>{i18n.t('about.p1')}</p>
+              <p>{i18n.t('about.p2')}</p>
+              <p>{i18n.t('about.p3')}</p>
             </div>
           </div>
         </div>
@@ -76,7 +77,7 @@ function App() {
 
       <section className="skill">
         <div className="container">
-          <Title order="02" text="Conhecimentos" />
+          <Title order="02" text={i18n.t('about.title')} />
           <div className="skill__cards__container">
 
             {skill.map(card => (
@@ -91,24 +92,24 @@ function App() {
 
       <section className="certification">
         <div className="container">
-          <Title order="03" text="Certificações" />
+          <Title order="03" text={i18n.t('certifications.title')} />
           <Tab />
         </div>
       </section>
 
       <section className="project">
         <div className="container">
-          <Title order="04" text="Projetos" />
+          <Title order="04" text={i18n.t('projects.title')} />
           <ProjectSlider slides={project} />
         </div>
       </section>
 
       <section id="contact">
         <div className="container">
-          <Title order="05" text="Contato" />
+          <Title order="05" text={i18n.t('contact.title')} />
           <div className="contact__content">
             <div className="contact__info">
-              <p>Você pode me enviar uma mensagem ou me encontrar no <a href="https://www.linkedin.com/in/renansoaresf/" target="_blank" rel="noreferrer"> LinkedIn</a>
+              <p>{i18n.t('contact.subtitle')} <a href="https://www.linkedin.com/in/renansoaresf/" target="_blank" rel="noreferrer"> LinkedIn</a>
               </p>
             </div>
 
