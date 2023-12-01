@@ -68,11 +68,35 @@ nav a {
   width: 100% !important;
 }
 
+select {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  background-color: transparent;
+  color: var(--white);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+select option {
+  background-color: var(--white);
+  color: var(--blue);
+  text-align: left;
+  font-weight: 600;
+}
+
 
 /* ---- Media queries ---- */
 @media (max-width: 800px) {
   nav {
       display: none;
+  }
+
+  select {
+    width: 25%;
+    display: flex;
+    margin: 0 auto;
   }
 
   .menu-toggle {

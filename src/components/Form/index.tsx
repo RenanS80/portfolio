@@ -6,7 +6,7 @@ import { I18N_STORAGE_KEY } from "utils/lang";
 
 import { EMAIL_ID, PUBLIC_KEY, TEMPLATE_ID } from 'utils/emailjs';
 
-import ArrowIcon from 'assets/images/arrow.svg';
+import ArrowRight from 'assets/images/arrow-right.svg';
 
 import './style.css';
 
@@ -96,7 +96,7 @@ function Form() {
             <div>
                 <button type="submit" className="btn btn--large btn--blue">
                     {i18n.t('contact.form.button')} 
-                    <img src={ArrowIcon} alt={language === 'en-US' ? "Send message" : "Enviar mensagem"}/>
+                    <img src={ArrowRight} alt={language === 'en-US' ? "Send message" : "Enviar mensagem"}/>
                 </button>
             </div>
         </form>

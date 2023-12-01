@@ -15,11 +15,9 @@ import ProjectSlider from 'components/ProjectSlider';
 import Form from 'components/Form';
 import Footer from 'components/Footer';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
-
 import Profile from 'assets/images/profile.jpg';
 import StrokeEffect from 'assets/images/stroke-effect.svg';
+import ArrowDown from 'assets/images/arrow-down.svg';
 
 import './App.css';
 
@@ -38,7 +36,7 @@ function App() {
 
           <a href="#about" role="button" className="btn--about">
             {i18n.t('hero.aboutBtn')}
-            <FontAwesomeIcon icon={faChevronDown} className="arrow-down"></FontAwesomeIcon>
+            <img src={ArrowDown} alt="Arrow down" className="arrow-down"/>
           </a>
 
           <div className="hero__social-media">

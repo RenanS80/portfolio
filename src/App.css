@@ -194,6 +194,7 @@ ul {
 }
 
 .btn--about {
+  display: flex;
   position: relative;
   margin-top: 5rem;
   padding: 1.7rem 2.8rem;
@@ -241,6 +242,7 @@ ul {
   position: absolute;
   bottom: 9rem;
 }
+
 
 /* ---- Section About ---- */
 #about .container {

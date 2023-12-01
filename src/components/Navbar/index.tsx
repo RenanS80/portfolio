@@ -3,6 +3,7 @@ import { I18N_STORAGE_KEY } from "utils/lang";
 import { i18n } from "translate/i18n";
 
 import Logo from "assets/images/logo.png";
+import BrazilFlag from "assets/images/brazil-flag.svg";
 import "./style.css";
 
 function Navbar() {
@@ -31,7 +32,9 @@ function Navbar() {
           <nav>
             <div>
               <select onChange={handleSelectChange} value={language!}>
-                <option value="pt-BR">Português</option>
+                <option value="pt-BR">
+                <img src={BrazilFlag} alt="Brasil" />
+                  Português</option>
                 <option value="en-US">Inglês</option>
               </select>
             </div>
