@@ -36,6 +36,7 @@ function Form() {
 
         emailjs.send(EMAIL_ID, TEMPLATE_ID, TEMPLATE_PARAMS, PUBLIC_KEY)
             .then((response) => {
+                // eslint-disable-next-line no-lone-blocks
                 {toast.success(language === 'en-US' ? 'Message sent successfully' : 'Mensagem enviada com sucesso.')}
 
                 /* Limpando os inputs após envio */

@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { I18N_STORAGE_KEY } from "utils/lang";
-import { i18n } from "translate/i18n";
 
 import { project } from 'data/project';
 import { Project } from 'types/Project';
