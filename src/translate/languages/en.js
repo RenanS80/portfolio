@@ -20,7 +20,7 @@ export const messages = {
                 title: 'Skills'
             },
             certifications: {
-                title: 'Certificações',
+                title: 'Certifications',
                 associateDescription: '"The Salesforce Associate certification is designed for individuals who have a fundamental awareness of how an integrated CRM platform solves the challenge of connecting departments and customer data, and who may have up to 6 months of Salesforce user experience." - Trailhead',
                 appBuilderDescription: '"Candidates should have experience designing, building, and implementing custom applications using the declarative customization capabilities of the Salesforce Platform." - Trailhead'
             },
