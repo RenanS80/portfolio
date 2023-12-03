@@ -429,3 +429,13 @@ ul {
     padding-bottom: 0;
   }
 }
+
+@media (max-width: 420px) {
+  .hero__title {
+    margin-top: 2rem;
+  }
+
+  .btn--about {
+    margin-top: 3rem;
+  }
+}
