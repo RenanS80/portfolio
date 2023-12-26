@@ -22,11 +22,5 @@ export const social = [
         name: 'Behance',
         url: 'https://www.behance.net/renansoares11',
         image: 'https://ik.imagekit.io/zqxyh6u3ylz/Portf%C3%B3lio/behance-icon_ltE2l1wLi.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1660341538043'
-    },
-    {
-        id: 5,
-        name: 'Instagram',
-        url: 'https://www.instagram.com/renan_soaresf/',
-        image: 'https://ik.imagekit.io/zqxyh6u3ylz/Portf%C3%B3lio/instagram-icon_drwtEgDFw.svg?ik-sdk-version=javascript-1.4.3&updatedAt=1660341538106'
     }
 ]

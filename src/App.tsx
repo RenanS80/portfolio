@@ -75,7 +75,7 @@ function App() {
 
       <section className="skill">
         <div className="container">
-          <Title order="02" text={i18n.t('about.title')} />
+          <Title order="02" text={i18n.t('skills.title')} />
           <div className="skill__cards__container">
 
             {skill.map(card => (
